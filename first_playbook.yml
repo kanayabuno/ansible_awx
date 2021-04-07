@@ -3,11 +3,10 @@
   connection: network_cli
   hosts: all
   collections:
-    # my_namespace.my_collection
     - alliedtelesis.awplus
   tasks:
     - name: run show running-config                         # task name
-      awplus_command:                                       # module name
+      alliedtelesis.awplus.awplus_command:                                       # module name
         commands: show running-config
       register: before_config                               # store the result in before_config
 
