@@ -1,14 +1,17 @@
 ---
-- name: test
-  connection: network_cli
-  hosts: all
-  collections:
-    - alliedtelesis.awplus
-  tasks:
-    - name: run show running-config                         # task name
-      awplus_command:
-        commands: show running-config
-        #register: before_config                               # store the result in before_config
+- name: Example from an Ansible Playbook
+  ansible.builtin.ping:
+
+    #- name: test
+    #  connection: network_cli
+    #  hosts: all
+    #  collections:
+    #    - alliedtelesis.awplus
+    #  tasks:
+    #    - name: run show running-config                         # task name
+    #      awplus_command:
+    #        commands: show running-config
+    #        #register: before_config                               # store the result in before_config
 
       #     - name: Configure OSPF IPv6 router process id
       #      awplus_ipv6_ospf:                                     # use module "awplus_ipv6_ospf"
