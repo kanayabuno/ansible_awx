@@ -1,0 +1,178 @@
+Name:         awx-6f7bd969db-p7grf
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.39.110
+Start Time:   Thu, 01 Apr 2021 00:12:33 -0700
+Labels:       app=awx
+              pod-template-hash=6f7bd969db
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.6
+IPs:
+  IP:           172.17.0.6
+Controlled By:  ReplicaSet/awx-6f7bd969db
+Containers:
+  redis:
+    Container ID:  docker://9d7b6a0c6c55a38744f9c95549c26e479438b47245575e1c472dcf365ce8cac6
+    Image:         redis:latest
+    Image ID:      docker-pullable://redis@sha256:a63d3f66fb2f69d955d4f2ca0b229385537a77872ffc04290acae65aed5317d2
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      redis-server
+      /etc/redis.conf
+    State:          Running
+      Started:      Thu, 01 Apr 2021 00:13:05 -0700
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /data from awx-redis-data (rw)
+      /etc/redis.conf from awx-redis-config (ro,path="redis.conf")
+      /var/run/redis from awx-redis-socket (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from awx-token-mg5w6 (ro)
+  awx-web:
+    Container ID:   docker://b7268012a22b1ae77442c5f7443edeb256d66084ac137638525a5ff5283a1bd0
+    Image:          quay.io/ansible/awx:18.0.0
+    Image ID:       docker-pullable://quay.io/ansible/awx@sha256:44c5bf45828bd5307434636f140b69fa85cb818edae59af0fc4485efe059b13d
+    Port:           8052/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Thu, 01 Apr 2021 00:13:51 -0700
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:     1
+      memory:  2Gi
+    Environment:
+      MY_POD_NAMESPACE:  default (v1:metadata.namespace)
+    Mounts:
+      /etc/nginx/nginx.conf from awx-nginx-conf (ro,path="nginx.conf")
+      /etc/tower/SECRET_KEY from awx-secret-key (ro,path="SECRET_KEY")
+      /etc/tower/conf.d/ from awx-application-credentials (ro)
+      /etc/tower/settings.py from awx-settings (ro,path="settings.py")
+      /var/lib/awx/rsyslog from rsyslog-dir (rw)
+      /var/run/awx-rsyslog from rsyslog-socket (rw)
+      /var/run/redis from awx-redis-socket (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from awx-token-mg5w6 (ro)
+      /var/run/supervisor from supervisor-socket (rw)
+  awx-task:
+    Container ID:  docker://f0c166ecae5f9cd2059df725980976ddc10f38785cdf38415193aeef07d17535
+    Image:         quay.io/ansible/awx:18.0.0
+    Image ID:      docker-pullable://quay.io/ansible/awx@sha256:44c5bf45828bd5307434636f140b69fa85cb818edae59af0fc4485efe059b13d
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      /usr/bin/launch_awx_task.sh
+    State:          Running
+      Started:      Thu, 01 Apr 2021 00:13:53 -0700
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:     500m
+      memory:  1Gi
+    Environment:
+      SUPERVISOR_WEB_CONFIG_PATH:  /supervisor.conf
+      AWX_SKIP_MIGRATIONS:         1
+      MY_POD_UID:                   (v1:metadata.uid)
+      MY_POD_IP:                    (v1:status.podIP)
+      MY_POD_NAMESPACE:            default (v1:metadata.namespace)
+    Mounts:
+      /etc/tower/SECRET_KEY from awx-secret-key (ro,path="SECRET_KEY")
+      /etc/tower/conf.d/ from awx-application-credentials (ro)
+      /etc/tower/settings.py from awx-settings (ro,path="settings.py")
+      /var/lib/awx/projects from awx-projects (rw)
+      /var/lib/awx/rsyslog from rsyslog-dir (rw)
+      /var/run/awx-rsyslog from rsyslog-socket (rw)
+      /var/run/receptor from receptor-socket (rw)
+      /var/run/redis from awx-redis-socket (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from awx-token-mg5w6 (ro)
+      /var/run/supervisor from supervisor-socket (rw)
+  awx-ee:
+    Container ID:  docker://05c03a2beb389c4811ebcd85297fb923114bd592e0da64c63f85ea6c4edff4a7
+    Image:         quay.io/ansible/awx-ee
+    Image ID:      docker-pullable://quay.io/ansible/awx-ee@sha256:38f7b8965efc4309f9d77e74317d24c851dc7b7fc4f5c4f99a71f04c24f828c3
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      receptor
+      --config
+      /etc/receptor.conf
+    State:          Running
+      Started:      Thu, 01 Apr 2021 00:14:50 -0700
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /etc/receptor.conf from awx-receptor-config (ro,path="receptor.conf")
+      /var/lib/awx/projects from awx-projects (rw)
+      /var/run/receptor from receptor-socket (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from awx-token-mg5w6 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  awx-application-credentials:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  awx-app-credentials
+    Optional:    false
+  awx-secret-key:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  awx-secret-key
+    Optional:    false
+  awx-settings:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      awx-awx-configmap
+    Optional:  false
+  awx-nginx-conf:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      awx-awx-configmap
+    Optional:  false
+  awx-redis-config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      awx-awx-configmap
+    Optional:  false
+  awx-redis-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  awx-redis-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  supervisor-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  rsyslog-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  receptor-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  rsyslog-dir:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  awx-receptor-config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      awx-awx-configmap
+    Optional:  false
+  awx-projects:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  awx-token-mg5w6:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  awx-token-mg5w6
+    Optional:    false
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
