@@ -5,8 +5,8 @@
   collections:
     - alliedtelesis.awplus
   tasks:
-    - name: run show running-config                         # task name
-      alliedtelesis.awplus.awplus_command:                                       # module name
+    #    - name: run show running-config                         # task name
+      alliedtelesis.awplus.awplus_command:
         commands: show running-config
       register: before_config                               # store the result in before_config
 
