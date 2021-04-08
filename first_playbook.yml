@@ -1,43 +1,40 @@
 ---
-- name: Example from an Ansible Playbook
-  ansible.builtin.ping:
+- name: test
+  connection: network_cli
+  hosts: all
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: run show running-config                         # task name
+      awplus_command:
+        commands: show running-config
+        #register: before_config                               # store the result in before_config
 
-    #- name: test
-    #  connection: network_cli
-    #  hosts: all
-    #  collections:
-    #    - alliedtelesis.awplus
-    #  tasks:
-    #    - name: run show running-config                         # task name
-    #      awplus_command:
-    #        commands: show running-config
-    #        #register: before_config                               # store the result in before_config
-
-      #     - name: Configure OSPF IPv6 router process id
-      #      awplus_ipv6_ospf:                                     # use module "awplus_ipv6_ospf"
-      #        router:
-      #          process_id: 101
-      #
-      #          #    - name: create sa2
-      #          #      awplus_static_lag_interfaces:
-      #          #        config:
-      #          #          - name: sa2
-      #          #            members:
-      #          #              - member: port1.0.4
-      #          #              - member: port1.0.3
-      #          #        state: merged
-      #
-      #     - name: run show running-config
-      #      awplus_command:                                       # use module "awplus_command"
-      #        commands: show running-config
-      #      register: after_config
-      #
-      #     - name: save output to backups
-      #      copy:                                                 # use copy module
-      #        content: "{{ before_config.stdout[0] }}"
-      #        dest: "$HOME/before_config_{{ inventory_hostname }}.txt"
-      #
-      #     - name: save output to backups
-      #      copy:
-      #        content: "{{ after_config.stdout[0] }}"
-      #        dest: "$HOME/after_config_{{ inventory_hostname }}.txt"
+ #     - name: Configure OSPF IPv6 router process id
+ #      awplus_ipv6_ospf:                                     # use module "awplus_ipv6_ospf"
+ #        router:
+ #          process_id: 101
+ #
+ #          #    - name: create sa2
+ #          #      awplus_static_lag_interfaces:
+ #          #        config:
+ #          #          - name: sa2
+ #          #            members:
+ #          #              - member: port1.0.4
+ #          #              - member: port1.0.3
+ #          #        state: merged
+ #
+ #     - name: run show running-config
+ #      awplus_command:                                       # use module "awplus_command"
+ #        commands: show running-config
+ #      register: after_config
+ #
+ #     - name: save output to backups
+ #      copy:                                                 # use copy module
+ #        content: "{{ before_config.stdout[0] }}"
+ #        dest: "$HOME/before_config_{{ inventory_hostname }}.txt"
+ #
+ #     - name: save output to backups
+ #      copy:
+ #        content: "{{ after_config.stdout[0] }}"
+ #        dest: "$HOME/after_config_{{ inventory_hostname }}.txt"
