@@ -1,3 +1,4 @@
 ---
 collections:
   - name: alliedtelesis.awplus
+  - name: ansible.netcommon
