@@ -1,64 +1,64 @@
-#[all:vars]
-#ansible_connection=network_cli
-#
-#[switches:children]
-#awplus    # awplus group
-##eos      # Arista EOS group
-#
-#[awplus]
-## multiple hosts can be set
-#aw1 ansible_host=192.168.2.100
-##aw2 ansible_host=xxxxxx
-#
-#[awplus:vars]
-#ansible_become=yes
-#ansible_become_method=enable
-#ansible_network_os=awplus
-#ansible_user=manager
-#ansible_password=friend
-#
-##[eos]
-##veos01 ansible_host=veos-01.example.net
-##veos02 ansible_host=veos-02.example.net
-##veos03 ansible_host=veos-03.example.net
-##veos04 ansible_host=veos-04.example.net
-##
-##[eos:vars]
-##ansible_become=yes
-##ansible_become_method=enable
-##ansible_network_os=eos
-##ansible_user=my_eos_user
-##ansible_password=password
-#
-
 [all:vars]
-#ansible_ssh_private_key_file=/home/student2/.ssh/aws-private.pem
-[routers:children]
-cisco
-
-[cisco]
-rtr1 ansible_host=35.182.253.237 private_ip=172.16.246.179
-rtr2 ansible_host=35.183.148.238 private_ip=172.17.148.190
-rtr3 ansible_host=35.183.120.103 private_ip=172.16.172.246
-rtr4 ansible_host=35.182.19.189 private_ip=172.17.45.14
-
-
-[cisco:vars]
-ansible_user=ec2-user
-ansible_network_os=ios
 ansible_connection=network_cli
 
+[switches:children]
+awplus    # awplus group
+#eos      # Arista EOS group
 
-[dc1]
-rtr1
-rtr3
+[awplus]
+# multiple hosts can be set
+aw1 ansible_host=192.168.2.100
+#aw2 ansible_host=xxxxxx
 
-[dc2]
-rtr2
-rtr4
+[awplus:vars]
+ansible_become=yes
+ansible_become_method=enable
+ansible_network_os=awplus
+ansible_user=manager
+ansible_password=friend
 
-[hosts]
-host1 ansible_host=35.183.15.179 ansible_user=ec2-user private_ip=172.17.182.250
+#[eos]
+#veos01 ansible_host=veos-01.example.net
+#veos02 ansible_host=veos-02.example.net
+#veos03 ansible_host=veos-03.example.net
+#veos04 ansible_host=veos-04.example.net
+#
+#[eos:vars]
+#ansible_become=yes
+#ansible_become_method=enable
+#ansible_network_os=eos
+#ansible_user=my_eos_user
+#ansible_password=password
 
-[control]
-ansible ansible_host=35.183.124.24 ansible_user=student2 private_ip=172.16.53.104
+
+#[all:vars]
+##ansible_ssh_private_key_file=/home/student2/.ssh/aws-private.pem
+#[routers:children]
+#cisco
+#
+#[cisco]
+#rtr1 ansible_host=35.182.253.237 private_ip=172.16.246.179
+#rtr2 ansible_host=35.183.148.238 private_ip=172.17.148.190
+#rtr3 ansible_host=35.183.120.103 private_ip=172.16.172.246
+#rtr4 ansible_host=35.182.19.189 private_ip=172.17.45.14
+#
+#
+#[cisco:vars]
+#ansible_user=ec2-user
+#ansible_network_os=ios
+#ansible_connection=network_cli
+#
+#
+#[dc1]
+#rtr1
+#rtr3
+#
+#[dc2]
+#rtr2
+#rtr4
+#
+#[hosts]
+#host1 ansible_host=35.183.15.179 ansible_user=ec2-user private_ip=172.17.182.250
+#
+#[control]
+#ansible ansible_host=35.183.124.24 ansible_user=student2 private_ip=172.16.53.104
