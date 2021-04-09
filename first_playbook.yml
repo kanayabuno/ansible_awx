@@ -1,9 +1,9 @@
 ---
 - name: test
-  #  connection: network_cli
-  connection: local
-  #hosts: all
-  hosts: localhost
+  connection: network_cli
+  #connection: local
+  hosts: all
+  #hosts: localhost
   collections:
     - alliedtelesis.awplus
   tasks:
