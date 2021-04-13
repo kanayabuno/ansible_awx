@@ -1,16 +1,16 @@
 [all:vars]
 ansible_connection=network_cli
 
-#[switches:children]
-#awplus    # awplus group
+[switches:children]
+awplus    # awplus group
 #eos      # Arista EOS group
 
-#[awplus]
+[awplus]
 # multiple hosts can be set
 aw1 ansible_host=192.168.2.100
 #aw2 ansible_host=xxxxxx
 
-#[awplus:vars]
+[awplus:vars]
 ansible_become=yes
 ansible_become_method=enable
 ansible_network_os=awplus
