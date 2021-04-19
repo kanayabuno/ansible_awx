@@ -1,0 +1,104 @@
+---
+name: Build and Test
+
+on: [push, pull_request, pull_request_review]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build collection
+        run: ansible-galaxy collection build
+      - name: Update pip
+        run: python3 -m pip install --upgrade pip
+      - name: Install pyyaml
+        run: python3 -m pip install pyyaml
+      - name: Get collection version
+        run: python3 get_version.py
+      - name: Store collection version in bash
+        run: echo "COLLECTION_VERSION=$(cat version)" >> $GITHUB_ENV
+      - name: Install collection
+        run: ansible-galaxy collection install alliedtelesis-awplus-${COLLECTION_VERSION}.tar.gz
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: ansible_collections/alliedtelesis/awplus
+      - name: Install netcommon module
+        run: ansible-galaxy collection install ansible.netcommon -p ${GITHUB_WORKSPACE}
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Set awplus and ansible env vars
+        run: |
+          echo "AWPLUS_PATH=${GITHUB_WORKSPACE}/ansible_collections/alliedtelesis/awplus/" >> $GITHUB_ENV
+          echo "ANSIBLE_PATH=${GITHUB_WORKSPACE}/ansible" >> $GITHUB_ENV
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+      - name: Install ansible-test
+        run: |
+          sudo apt update
+          sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+          git clone https://github.com/ansible/ansible.git ${GITHUB_WORKSPACE}/ansible
+          pip install --upgrade pip
+          pip install setuptools
+          pip install -r ${ANSIBLE_PATH}/requirements.txt
+          pip install -r ${ANSIBLE_PATH}/test/units/requirements.txt
+          pip install -r ${ANSIBLE_PATH}/test/lib/ansible_test/_data/requirements/units.txt
+          pip install -r ${ANSIBLE_PATH}/test/lib/ansible_test/_data/requirements/network-integration.txt
+          source ${ANSIBLE_PATH}/hacking/env-setup
+      - name: Test unit tests
+        run: |
+          cd ${AWPLUS_PATH}
+          ${ANSIBLE_PATH}/bin/ansible-test units --python ${{ matrix.python-version }}
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      # A large chunk of the following is duplicated, since GitHub Actions doesn't
+      # yet support YAML anchors.
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: ansible_collections/alliedtelesis/awplus
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.6
+      - name: Set awplus and ansible env vars
+        run: |
+          echo "AWPLUS_PATH=${GITHUB_WORKSPACE}/ansible_collections/alliedtelesis/awplus/" >> $GITHUB_ENV
+          echo "ANSIBLE_PATH=${GITHUB_WORKSPACE}/ansible" >> $GITHUB_ENV
+      - name: Install ansible-test
+        run: |
+          sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+          git clone https://github.com/ansible/ansible.git ${GITHUB_WORKSPACE}/ansible
+          python3 -m pip install --upgrade pip
+          python3 -m pip install setuptools
+          python3 -m pip install -r ${AWPLUS_PATH}/dev-requirements.txt
+          python3 -m pip install -r ${ANSIBLE_PATH}/requirements.txt
+          python3 -m pip install -r ${ANSIBLE_PATH}/test/units/requirements.txt
+          python3 -m pip install -r ${ANSIBLE_PATH}/test/lib/ansible_test/_data/requirements/units.txt
+          python3 -m pip install -r ${ANSIBLE_PATH}/test/lib/ansible_test/_data/requirements/network-integration.txt
+          source ${ANSIBLE_PATH}/hacking/env-setup
+      - name: Check PEP 8
+        run: |
+          cd ${AWPLUS_PATH}
+          ${ANSIBLE_PATH}/bin/ansible-test sanity --test pep8 plugins/ tests/
+      - name: Lint Ansible Playbooks
+        uses: ansible/ansible-lint-action@master
+        with:
+          targets: playbooks
+      - name: yamllint
+        run: |
+          cd ${AWPLUS_PATH}
+          python3 -m yamllint -c yamllint.yaml .

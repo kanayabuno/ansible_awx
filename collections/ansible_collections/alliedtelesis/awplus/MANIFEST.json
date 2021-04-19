@@ -1,0 +1,34 @@
+{
+ "collection_info": {
+  "description": "Modules to support configuration of AlliedWare Plus devices.", 
+  "repository": "https://github.com/alliedtelesis/ansible_awplus", 
+  "tags": [
+   "networking"
+  ], 
+  "dependencies": {}, 
+  "authors": [
+   "Cheng Yi Kok (@cyk19)", 
+   "Isaac Daly (@dalyIsaac)", 
+   "Jeremy Toth (@jtsource)", 
+   "Darryl Alang", 
+   "Tony van der Peet"
+  ], 
+  "issues": "https://github.com/alliedtelesis/ansible_awplus/issues", 
+  "name": "awplus", 
+  "license": [], 
+  "documentation": "https://github.com/alliedtelesis/ansible_awplus", 
+  "namespace": "alliedtelesis", 
+  "version": "1.1.0", 
+  "readme": "README.md", 
+  "license_file": "LICENSE", 
+  "homepage": "https://github.com/alliedtelesis/ansible_awplus"
+ }, 
+ "file_manifest_file": {
+  "format": 1, 
+  "ftype": "file", 
+  "chksum_sha256": "c6820ba6be05f07573466b8ddaf1f0654651e3160329bc6079205b0c8f93792e", 
+  "name": "FILES.json", 
+  "chksum_type": "sha256"
+ }, 
+ "format": 1
+}

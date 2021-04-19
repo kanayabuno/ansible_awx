@@ -1,0 +1,2371 @@
+{
+ "files": [
+  {
+   "format": 1, 
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": ".", 
+   "chksum_type": null
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "playbooks", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "95e640f8dc8e040a3e3cfe53c5cfb102f018bb5420bedf6d93febcb7b9e044f8", 
+   "name": "playbooks/implicit_facts.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "979433f260924ff8f65170ff92e4198d9d28b2bf1ed3400ebbd6b45d29ac7bbf", 
+   "name": "playbooks/awplus_lacp_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "199e8f0774dad160fe57bf4890f290eb13e3956c491eecadc5e3602d69ebbaca", 
+   "name": "playbooks/awplus_l3_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "61ff61c60e8026c07b923ef632e08cf19cbf7f9a8791325510d8c4181650106f", 
+   "name": "playbooks/tests_lag_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0492f61353d8d17d5d6dedf91c50e81e21fa497b766023275b85190c32b0350a", 
+   "name": "playbooks/awplus_static_route.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f0824833e7dd274dc7adee30a266c60f4e382bf37e473d28b525abbb72d13dc6", 
+   "name": "playbooks/awplus_rip.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "6d3cee33313c8088e6f196c5b1330b813c48ee075a7e69b5b2f3cffdf5e41fa6", 
+   "name": "playbooks/explicit_facts.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "2d03999d00856d0bb8b82cf05eff6350c7a2e2bde0073b893ecb33cbe197a6d8", 
+   "name": "playbooks/awplus_config.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0c99710937fa8adba836fac04e7786690135903a32f1d04fdf927d8525c29ed8", 
+   "name": "playbooks/awplus_ipv6_ospf.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8c1b3c8dca307e8a00b67d3aac3fafb7c0b6b2f967c8db8b840331fc4db3d202", 
+   "name": "playbooks/awplus_vlans.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c6cf2d203a7d7e515dce5d7615828f55df94cf731f7dc399e84302c448f8f8d2", 
+   "name": "playbooks/awplus_static_lag_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d123cae975e70ceb6f0415868fd4c3b45fa39baaea28b76eadb7e0f59a27acf3", 
+   "name": "playbooks/awplus_logging.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "fb14368d7e642225b3b3316400075d62df759a2280227d9e18d05351e4b75e24", 
+   "name": "playbooks/awplus_bgp.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "59fc3fe0cef8ed40272fa27121d51dee254d01bd6d1512352145ef163dd49285", 
+   "name": "playbooks/awplus_ospf.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "9d1442470f9f2b655cb68be8de4b207c396eed7b9b181aeab1a23e68d0b34ab7", 
+   "name": "playbooks/awplus_user.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "b85fbc856a784dd23b295d02514607294b86f8de8122ee360b6885f45ba23199", 
+   "name": "playbooks/awplus_ntp.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "932b303a825e10cbdc48a3bb2c73b40c8087e8cfadfb107d9605656040ffa413", 
+   "name": "playbooks/smoke_tests.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "05149694a63e2ae6a1a9928b21c4c122718c106fe28654634e0305f2dfb58db1", 
+   "name": "playbooks/awplus_lacp.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "abc4e1aead56870e848251414d991ec40e4525435bbdf1619b46e37e1e362e4c", 
+   "name": "playbooks/awplus_lldp_global.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0cfb5822e42751002a62abf59ab72d634436093135d3333ecf3065e48de82bc5", 
+   "name": "playbooks/deleted_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a3b5ba111826bdc296ef072b0cab89fe798b03dbb2f5913dac8ee9b72e4e37a1", 
+   "name": "playbooks/awplus_vrf.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8dd968d7d83ec6729fb58de69125c5fb2f6bc263feb9af5403b532590fd6ce11", 
+   "name": "playbooks/master.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "315f5bdb76d078c43b8ac0064e4a0164612b1fce77c869345bfc94c75894edd3", 
+   "name": "playbooks/raw_banner.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8c7d3308f27ce4eea59aaf22e796b7e75a9aa6a0facff44a302c236dd557a8b4", 
+   "name": "playbooks/awplus_linkagg.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0eb31d6344312252539ddf891694f77da9fe5e09b3ff1d4338b1b79e8756cb83", 
+   "name": "playbooks/awplus_openflow.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "4f44a2782909b48701f701d75f3b1716a87d1944b54696c1a8b83146688d5f3f", 
+   "name": "playbooks/tests_static_lag_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d659b8629b0182224ae0bc8633402bd783fa8761a1d834ab21ac35750aca28a6", 
+   "name": "playbooks/awplus_l2_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e7e9b0a76ea41fc4ffc2248e68009af68882b3e6cfda8a8c1c9ab6f10ba36a63", 
+   "name": "playbooks/awplus_lldp_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "db631176a4045cc3c25ad2b88b21721724f27354328c089b89521b307f43b49d", 
+   "name": "playbooks/awplus_system.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7a218129b9fa02824cc0b11d1f2fd5f2205582262426847ec1a46e83871d89d7", 
+   "name": "playbooks/awplus_lag_interfaces.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c8a93ef2a443035949b96799e4e97ddcda73dd8f1d80086c0df65d6c244b7162", 
+   "name": "playbooks/awplus_ping.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "32e5a35819e8adcff9c3b92283ee71bf9eea1853f7a3f9a288569b8865c45766", 
+   "name": "playbooks/awplus_command.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "696170c814d0769a193c69d821c09ca5ed93feab864f42537cb18c8fb42c6e42", 
+   "name": "playbooks/tests_vrfs.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7c0446d7e4c37c74a5d96561fdf4c88c0c47b7cf9b0c6bb196b3c6cad6cca85d", 
+   "name": "playbooks/awplus_banner.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": ".vscode", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8ac0b6b2a9ecb00d32b5ef538898eafffefe27bbbcfe9d6f220d7bb70697d6ff", 
+   "name": ".vscode/settings.json", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0fd8b45657d758deff7d2518d2c5c7062e1a174d25b5b925d7520e9bda006740", 
+   "name": ".vscode/extensions.json", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903", 
+   "name": "LICENSE", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986", 
+   "name": "LICENSE.txt", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit/modules", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "6db88aeee7b6fffec0bf8075931137e8667269f7e91270fddf11e4d6f6cccd0f", 
+   "name": "tests/unit/modules/test_awplus_command.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "83dfca701d53fe2bd87bac43b9062356767920de07d77dfdba1857b068676395", 
+   "name": "tests/unit/modules/test_awplus_static_route.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "da7144808512712315f3e0d5b2d1fc93ac7e73a347d82a08ffdb9d297aef5854", 
+   "name": "tests/unit/modules/test_awplus_l2_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit/modules/fixtures", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0880f5724925ee4565d14d449c78902feddaba989f3abf83c2a9a7ad48b4c8a8", 
+   "name": "tests/unit/modules/fixtures/awplus_interfaces_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f446bfbaaf49f820fd0776f931f0e08b07add42a57b0050b1fb0f5784a9dd610", 
+   "name": "tests/unit/modules/fixtures/awplus_vrf_intf.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "2995a1b483f60ff627ded27d8af8fd161c2dce88d7b95f4e061564484b0826fd", 
+   "name": "tests/unit/modules/fixtures/awplus_lacp_interfaces_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f97fd551f017619574081d865992dc35a3d7b059238425573e4bd36e8507a859", 
+   "name": "tests/unit/modules/fixtures/awplus_facts_show_ip_irdp_interface", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ebfa688c6edc2bcc06c6627fe45592fd5e7126a4c0f73c19289ebf2aaeb80aa4", 
+   "name": "tests/unit/modules/fixtures/awplus_config_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "4781ea55ad485e85a95950d634c295929715b2956554530ab143123865ce16fb", 
+   "name": "tests/unit/modules/fixtures/awplus_lldp_interfaces.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0184396fd0395f075e09723c9c86a45028a14d814f55bb83514c48f113a98baf", 
+   "name": "tests/unit/modules/fixtures/awplus_ping_192.168.5.1_repeat_5", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "86b69264baf9f41d190402356e21f251f1c2345ff4b64e0655f416149a5cddb8", 
+   "name": "tests/unit/modules/fixtures/awplus_facts_show_file_systems", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "98e81d52db0e2079e8458cfca954f32c9f9da6767ffe5602fb92eb731e38708d", 
+   "name": "tests/unit/modules/fixtures/awplus_l3_interfaces_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8e2e4df0b650c694c802ece824c0b29bc4feae388f98c999fc15379bef064f52", 
+   "name": "tests/unit/modules/fixtures/awplus_system_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "09690d0fd804e398c27422af43395a7111b8b69014c358658d58828f2d60fab3", 
+   "name": "tests/unit/modules/fixtures/awplus_lldp_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e352e2c2fc8c02de94ef49f6f9c1b11fba1f925e237dfef84049daff2de09a9c", 
+   "name": "tests/unit/modules/fixtures/awplus_rip_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ab5a4f153f8ede037a0b103da01ccb9d8962c0bc68c77141dd59f36db287d338", 
+   "name": "tests/unit/modules/fixtures/awplus_facts_show_system", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "cbde46e68b36e4597d493a469e506fb9a1eae2870f97b6f0cf35c0b54bd7c339", 
+   "name": "tests/unit/modules/fixtures/awplus_facts_show_lldp", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "93f763d700129ce63dc9a6f4d84a963fa1359dafc8feb47b853bcd77b3c52416", 
+   "name": "tests/unit/modules/fixtures/awplus_openflow_show_run.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "9a9127dacbe65da31f389a32aa41849cdd0d2776ce84e39901e396d7604a3d93", 
+   "name": "tests/unit/modules/fixtures/awplus_user_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "1bd34a9267b5322225084c50247c5c03685719844158c1148bae4185ae9423e5", 
+   "name": "tests/unit/modules/fixtures/awplus_ping_192.168.5.44_repeat_5", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "45d99364998a7cd05a6e9baadacec66eb3c3ef61afb62f9f833c1b3b44a1899f", 
+   "name": "tests/unit/modules/fixtures/awplus_static_route.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "24c6287153d6746cb24e42b9ee055c3a0d4c113bd1f37436e911a3e00db5b309", 
+   "name": "tests/unit/modules/fixtures/awplus_logging_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f75b6b6cfcaacd333f5046d0db1cf28a09593d418c92f611209e5a68848934e1", 
+   "name": "tests/unit/modules/fixtures/show_version", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3bf925ea74dbe2cadcb31c366dc3deeb9e1f77b5590a0022c8cd218f933dbad", 
+   "name": "tests/unit/modules/fixtures/show_log_config", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "6c3c23e737aa4ca8480aa287f76ce691069ace07f4c99e39b7bbece529d47050", 
+   "name": "tests/unit/modules/fixtures/awplus_vlan_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "30b02fa92566b0a73f61aa47795bf8ca7600f3c9c04b5713d9642c18984ed9aa", 
+   "name": "tests/unit/modules/fixtures/awplus_static_lag_interfaces_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ebe1753e03e15aebcd28d7a06cc5af49aaac949bcd4cdd5e16bf35f602c66168", 
+   "name": "tests/unit/modules/fixtures/awplus_vrf_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "68b304d1933fd91df3f8dd4170a56ea0c7a9583af829e3dea05985da86400bb6", 
+   "name": "tests/unit/modules/fixtures/awplus_facts_show_ipv6_interface", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "bc2818f090cdeed33331cf43c0b19cec2a1334cc9c888fc8bbf84c829f4ff17c", 
+   "name": "tests/unit/modules/fixtures/awplus_banner_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "63113e56c8e2df87371202905678e437152a931fb52101f7525584c35a7ac296", 
+   "name": "tests/unit/modules/fixtures/awplus_lacp_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "tests/unit/modules/fixtures/configure_terminal", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c9c2923d5f08ad4c622a6bbac05e063f60b90e1a8b412d0ebbe6628805b8e9bb", 
+   "name": "tests/unit/modules/fixtures/awplus_facts_show_interface", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d5b81d275cfcfcc189129b069cd426549f5a8d7ff56eda3251367efccfa68aff", 
+   "name": "tests/unit/modules/fixtures/awplus_facts_show_ip_interface", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "73af8033b047897b8db334350d77ac464e8d11fa0debbe71d0e12201afb5b2d9", 
+   "name": "tests/unit/modules/fixtures/awplus_bgp_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "cb42d56ab239813f2593e0a8ccc291a3255cab0b1ecda29c0155b6521b3e0a20", 
+   "name": "tests/unit/modules/fixtures/awplus_ipv6_ospf_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "52725368b66e895ea116da40b52542de98e8944676f8edbc4dcc4b069da9e6c3", 
+   "name": "tests/unit/modules/fixtures/awplus_ospf_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8050dd287cbc31a8b2ecf982503dee3079a9b9de3425e2c3307977033216ada3", 
+   "name": "tests/unit/modules/fixtures/awplus_ntp_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c791e100dded9c39862fb9f571fc5a58af112d71039269cc4409fd55a6f1661f", 
+   "name": "tests/unit/modules/fixtures/awplus_openflow_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f8484e17f7025fa9ce8d3ccb977c8aa92a84df96ea8a480d3fc5af4bfe6d49e2", 
+   "name": "tests/unit/modules/fixtures/awplus_linkagg_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "64f568c48a4dd4c5d3aa5c0bbc45010def30f480c53f442efda9d2f54b2aac8f", 
+   "name": "tests/unit/modules/fixtures/awplus_config_src.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "88972d9140bd74b70b514c70fda572244ede0f05cdedf79731f44e985f2166ff", 
+   "name": "tests/unit/modules/fixtures/awplus_lag_interfaces_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "791391cd4c536ae5a3370279a9cc7b27bccfee461d3c6a2767944da50cfd8ad2", 
+   "name": "tests/unit/modules/fixtures/awplus_l2_interfaces_config.cfg", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7d5011bcbe3b9fdaf10c73ce4a551960dcd2957515d90e6aeab0e090c754aea8", 
+   "name": "tests/unit/modules/test_awplus_config.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0d5cab5e74248e8b31df0be61881ce876e6f9244bb91f145afb49153015c2799", 
+   "name": "tests/unit/modules/test_awplus_user.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c3cde83ed88ed296a1827fd8cc57c9b9bce7fa65b74af172025aab418731c742", 
+   "name": "tests/unit/modules/test_awplus_static_lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "27e5decfab1a2bb9b7f19d161abf8a477fa2c275753697086967e8080bebb9e2", 
+   "name": "tests/unit/modules/test_awplus_openflow.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d6071b5769b3936d62a8213bca6565655a9f512d89f7d31c5f5ed2d86ef36eba", 
+   "name": "tests/unit/modules/test_awplus_lldp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f01bd170075bddd88c6b44fcadbce2c88da604fe9d18861260c29ee930ab3877", 
+   "name": "tests/unit/modules/test_awplus_lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "aabe979a4cf61735e3a840da124aeef4690c942a956688d2b370bf513f8200d2", 
+   "name": "tests/unit/modules/test_awplus_ping.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "01df06eac5dc1c97eb898361a6fadc747466cd8a1f5651327fc631d21cb5912a", 
+   "name": "tests/unit/modules/test_awplus_logging.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "5cb079b917c0db27e3ac9a6b5ec53e202bf6029fa9f5bbe15bb5a23aae75fa96", 
+   "name": "tests/unit/modules/test_awplus_banner.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "fbed30167dea5aca02e828d4cef7fbf10a05c810a0938a230250b0cb52e79edc", 
+   "name": "tests/unit/modules/test_awplus_ipv6_ospf.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d1bc8a2df9324d97be4f81d5df743fb0de25ca32e5f95cb6714904a162ff275a", 
+   "name": "tests/unit/modules/test_awplus_bgp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c1b2adb6e9466de3759004a53b33cfcca4a7a7b4a1211b8841f68e3d5773d3cc", 
+   "name": "tests/unit/modules/awplus_module.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3867081dbd143d606b8b9c18386b5f424986a0de92288a8dc62796c0203c4e92", 
+   "name": "tests/unit/modules/test_awplus_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a7485a6d198eef32a021c488e02fea258c2df5241fa4df4d9ac51c472fb376d3", 
+   "name": "tests/unit/modules/test_awplus_ntp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "2ff6162575ab60e0464255ce4654f1743384181f012e3faaef1baa945becae7e", 
+   "name": "tests/unit/modules/test_awplus_lacp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "6e4867841dd666f4c2924dc730bdc33f3e43de8a174b6f595bd5965fd72c80fe", 
+   "name": "tests/unit/modules/test_awplus_vlans.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "246eceb3c0d9f14b926334ddbbcc287739f83da768f09f7ab9c7c4c75373c36a", 
+   "name": "tests/unit/modules/test_awplus_vrf.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7c7f80f585d8df668e567e0a78083eba0081fcd1491201d26560d68518ce7c3e", 
+   "name": "tests/unit/modules/test_awplus_lacp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "6116c77d390cbf7c032451b76bd349639256853b8a6c5f091bcfdce806167c5b", 
+   "name": "tests/unit/modules/test_awplus_rip.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e1a15c20b815d1383be3ff30f9fd407310f8adc74d191dd039813a7ff2991ea4", 
+   "name": "tests/unit/modules/test_awplus_linkagg.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "4bc68615d99a2430bb5041024ca982d4491f70f5d783f18e3483784a501afce8", 
+   "name": "tests/unit/modules/test_awplus_system.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f6ff9041ae2fbc5789f37a0537bb074abc0eaf284067832930595654d43cb123", 
+   "name": "tests/unit/modules/test_awplus_ospf.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a4a3c5186aa97b47e2f375b744eeba12a5e6811c88c61991acb3febdc410fbae", 
+   "name": "tests/unit/modules/test_awplus_lldp_global.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "de448cb941413d8d8addbfdfdf93c741aaaac4d1d93fc27c45df0001e9ed3f6e", 
+   "name": "tests/unit/modules/test_awplus_vrfs.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3207b7c0a2bec1425e71e4b1cbf9b0e74d721b5da6955b1d1e8cdc2888595dae", 
+   "name": "tests/unit/modules/test_awplus_l3_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "tests/unit/modules/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "tests/unit/compat", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c1027e053a21d6e19f021cd022137ac984433b9066fabaa5abe1cd67b842d880", 
+   "name": "tests/unit/compat/mock.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3ed698b1faec43d87a2c1ebcb15a2aae48b09ff355bb9a598e5f5a1c928dbb30", 
+   "name": "tests/unit/compat/unittest.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ba13a350ade8ef804336f888d5883b8e54f8bddfb9d0fadc10277a8ca6540f4e", 
+   "name": "tests/unit/compat/builtins.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "tests/unit/compat/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "b24ad87a1c03c0885869fd93ff3cc097a04a3fe4c2e62cd3771917e7c1a249fc", 
+   "name": "tests/unit/utils.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": ".github", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": ".github/workflows", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3e3c04e8fe4a9558b83385bea92e9510d5c2d1c7b4bb2d30dad5a49e63cd7f06", 
+   "name": ".github/workflows/main.yml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/static_lag_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "2cb188bb340f092719ab04774dbf85cd67c91d338e89d4b26ed5084646f7c846", 
+   "name": "plugins/module_utils/network/awplus/config/static_lag_interfaces/static_lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/static_lag_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/lacp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "b97c079429113d570b740af9e0bae2ee8e14dac3b3a860fd47d44ec60e575890", 
+   "name": "plugins/module_utils/network/awplus/config/lacp/lacp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/lacp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a07af6800409bfe8513beb1afbc164341532ef5ca23b02cbd37828cf25a360ee", 
+   "name": "plugins/module_utils/network/awplus/config/interfaces/interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/lldp_global", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "520ba94aec0389567236cddbbe8809c8a226c8d11c2539144d270e5607c9341a", 
+   "name": "plugins/module_utils/network/awplus/config/lldp_global/lldp_global.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/lldp_global/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/lacp_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d84d929b5e1808df1011afb3c8ac6140cdd547c2ad2812e5971013076b9c58e2", 
+   "name": "plugins/module_utils/network/awplus/config/lacp_interfaces/lacp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/lacp_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/bgp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "58f8c442f579ea9683f1465fbb75cdc8885c61155e0ec1aa0d824329b7ac7faa", 
+   "name": "plugins/module_utils/network/awplus/config/bgp/bgp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/bgp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/ntp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "dafdbdb998cd7a10bf1da72934e8c5d49625d13e54061119bd86772d980969bf", 
+   "name": "plugins/module_utils/network/awplus/config/ntp/ntp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/ntp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/l2_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c7bb6a0b520ce00efb139e04ac5d4c4b985ce2c20d998dead5238895aa752a13", 
+   "name": "plugins/module_utils/network/awplus/config/l2_interfaces/l2_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/l2_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/lldp_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "89687d39dd394c010d0d7aeb6c4a4df3bb093f49c67cdb6782c497b4aac60a7d", 
+   "name": "plugins/module_utils/network/awplus/config/lldp_interfaces/lldp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/lldp_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/lag_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/lag_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "1cf4cc1343c6a24fc77c25f42318ded9b125d83583eaaf6ed045e41768284741", 
+   "name": "plugins/module_utils/network/awplus/config/lag_interfaces/lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/vrfs", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "63d555bbadcf669d8ea7a6ae95f11ab5b376fd7606c68339c0f8619a7c669787", 
+   "name": "plugins/module_utils/network/awplus/config/vrfs/vrfs.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/vrfs/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/vlans", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "82f1e2ac51dac9b40ad4fd01b44bb14be475b7f1294bcca00db039d4eebdaf9c", 
+   "name": "plugins/module_utils/network/awplus/config/vlans/vlans.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/vlans/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/logging", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "18c818d25598521b56a3ac37e5ff750041fb05bfe52a53eca7c45a06ecc10779", 
+   "name": "plugins/module_utils/network/awplus/config/logging/logging.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/logging/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/banner", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "27ded54e70c2b1ed343903fa1824163a65d32bb3152d3b7a6b1309948a7fece6", 
+   "name": "plugins/module_utils/network/awplus/config/banner/banner.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/banner/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/l3_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "dc73c7743c7123974a13cd8b2815e6c2b57270ff89c5a7fd5785aab37fa01bad", 
+   "name": "plugins/module_utils/network/awplus/config/l3_interfaces/l3_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/l3_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/config/user", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ec12648f74386e7290c7c4753a0857bc089761a234c8e1914144dd928d5cad03", 
+   "name": "plugins/module_utils/network/awplus/config/user/user.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/config/user/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/static_lag_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "584898d79574ebaafaaf41d86b4765cad0798bb4f10cc5448539b069c76653cf", 
+   "name": "plugins/module_utils/network/awplus/argspec/static_lag_interfaces/static_lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/static_lag_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/lacp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3350c5455dce9d709ae5ced9ea8b956ae3b7c2adc37eb8cec3c27a764521e40a", 
+   "name": "plugins/module_utils/network/awplus/argspec/lacp/lacp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/lacp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "596d8177af3f69faec03941d063ddfdbf94069ec39e099ac9a70b40dfa7439a8", 
+   "name": "plugins/module_utils/network/awplus/argspec/interfaces/interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/lldp_global", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d1b70a36c6005d52f5b0c33d13929304703af928bcd2e7d2c0bd6d57a5810c9f", 
+   "name": "plugins/module_utils/network/awplus/argspec/lldp_global/lldp_global.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/lldp_global/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/lacp_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d8579d9ecdd496facbbe6b173450028dfae11af088fc8c3b3c78078f21366f55", 
+   "name": "plugins/module_utils/network/awplus/argspec/lacp_interfaces/lacp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/lacp_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/bgp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f2c8ce251200eb92748c5233e284a8b9f1925a8f0b831bf1850dad393cc0f076", 
+   "name": "plugins/module_utils/network/awplus/argspec/bgp/bgp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/bgp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/ntp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ddc7e4743716ad714f482e4a89851f11b8ff28de84d427400c3fa6d801b215ba", 
+   "name": "plugins/module_utils/network/awplus/argspec/ntp/ntp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/ntp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/l2_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3a423ff974b41f9fdf87d5693ec4f0bdd766eaaee590008e531ad5367ba0936b", 
+   "name": "plugins/module_utils/network/awplus/argspec/l2_interfaces/l2_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/l2_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/lldp_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3e2125198b6348ac7a27e63691492b9eb3f1a36047c107b5eab7bc948f0a388b", 
+   "name": "plugins/module_utils/network/awplus/argspec/lldp_interfaces/lldp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/lldp_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/lag_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/lag_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c8a2b7a0237b1d02ec2c64dd8e4a30c02966125fe8eaa429840a3f45700ce487", 
+   "name": "plugins/module_utils/network/awplus/argspec/lag_interfaces/lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/vrfs", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "85f6ec20435c5131f69e57a3fd176d8ee70a1b655be7aff2ed53efe6ef2fac37", 
+   "name": "plugins/module_utils/network/awplus/argspec/vrfs/vrfs.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/vrfs/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/vlans", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "1dfb0d6f4a5e5bee20f2e24da44d25e1dd818eaee3d5675c77abe4c33692872f", 
+   "name": "plugins/module_utils/network/awplus/argspec/vlans/vlans.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/vlans/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/logging", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "23baae3018ab50b9895f55ed34750f910dfe2830f840180e3a93b51f9148bc00", 
+   "name": "plugins/module_utils/network/awplus/argspec/logging/logging.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/logging/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/banner", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "fc4a336a0720638b15abf981f7d59b653e874806d2761fac7778a2a49addc831", 
+   "name": "plugins/module_utils/network/awplus/argspec/banner/banner.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/banner/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/l3_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "9bf0d825042b1ebe1666f28831592095a483a7aca438c4eb651af88305a6c317", 
+   "name": "plugins/module_utils/network/awplus/argspec/l3_interfaces/l3_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/l3_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/facts", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0ddf6ee4260fe3af81f052f0b7c0aab64a042fdc74fb76c29aebf4a9bfbfd452", 
+   "name": "plugins/module_utils/network/awplus/argspec/facts/facts.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/facts/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/argspec/user", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "41282b3bafd2ca1d93afd117348385fdb2998e3c50cc55a51916c1efc5faecf6", 
+   "name": "plugins/module_utils/network/awplus/argspec/user/user.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/argspec/user/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/utils", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/utils/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ffec394c2524a00bd00549956bb45efacf47d714dceb023a88f10d1c65598447", 
+   "name": "plugins/module_utils/network/awplus/utils/utils.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/static_lag_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "23f4374527ff9a9f1dd6ac433f493fb80d60e8a5ca38ea26511f9a7612f0dc62", 
+   "name": "plugins/module_utils/network/awplus/facts/static_lag_interfaces/static_lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/static_lag_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/lacp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a272ce0cd8fde34399fb42ed2a6963c6a39d1dd3469f746f5cbc2d0acc56be83", 
+   "name": "plugins/module_utils/network/awplus/facts/lacp/lacp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/lacp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "accd269ba7d6996a6d489bb533ef67a09374948fe416ef6d3056746ab61d6094", 
+   "name": "plugins/module_utils/network/awplus/facts/interfaces/interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/lldp_global", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c4aa39531f3124b85c621239e91dde97957cf8fa533316a876341063729f439f", 
+   "name": "plugins/module_utils/network/awplus/facts/lldp_global/lldp_global.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/lldp_global/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/lacp_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "0064ea4fd6d9e8bfa8f82dae484d1cd192906dda52d0c57d5e5c1dbd6c410163", 
+   "name": "plugins/module_utils/network/awplus/facts/lacp_interfaces/lacp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/lacp_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/bgp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "325d9c9c72c5a1a85fd5e0f4687b1dcd7a9221d6ce79c867b5ed7680050e232f", 
+   "name": "plugins/module_utils/network/awplus/facts/bgp/bgp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/bgp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/ntp", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c1536865cf3a9f9b1a00e8445dcdb3b9cf115db4c7eeda1c310294535ee74518", 
+   "name": "plugins/module_utils/network/awplus/facts/ntp/ntp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/ntp/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7801799c7b47256bf1cf21534b92d077cf8398de02cbee2aa3f27630e79db254", 
+   "name": "plugins/module_utils/network/awplus/facts/facts.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/l2_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "655fe62f8ae50cf68ce13e0f9014842323afc9a9c11426b142adcfdbaadaaa9b", 
+   "name": "plugins/module_utils/network/awplus/facts/l2_interfaces/l2_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/l2_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/lldp_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "67a1b2c2f0f9e254b4adb6e1601892f9d7c3f8f810b1ea2834599e7619f1088e", 
+   "name": "plugins/module_utils/network/awplus/facts/lldp_interfaces/lldp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/lldp_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/lag_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/lag_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "726f350bb02ccaf8fa37d8ec07f03a3773dc9bf735be3c00a647127179dd7b0b", 
+   "name": "plugins/module_utils/network/awplus/facts/lag_interfaces/lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/vrfs", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e515a36656567af35d3bd1aef7ce0c38db3c7abe122044f6b2266ecddde36f57", 
+   "name": "plugins/module_utils/network/awplus/facts/vrfs/vrfs.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/vrfs/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/vlans", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d28af5ebdfa09cb1d33e32a566c3fdae79aa780e3e104850dfe8eb41675984bb", 
+   "name": "plugins/module_utils/network/awplus/facts/vlans/vlans.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/vlans/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/logging", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "606c678350032ab8594cf9c64a759d45d578203224bba6dfe44b8c2e5b7fcfe4", 
+   "name": "plugins/module_utils/network/awplus/facts/logging/logging.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/logging/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/banner", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "1d38542c8d593a396223def955834b455274e0cb2c8979270cd02ddc9c63d58a", 
+   "name": "plugins/module_utils/network/awplus/facts/banner/banner.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/banner/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/l3_interfaces", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "877d7e4172c28e8c6af0d68d4ca8af0072193de985c28301dd7668a33836b2b5", 
+   "name": "plugins/module_utils/network/awplus/facts/l3_interfaces/l3_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/l3_interfaces/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/network/awplus/facts/user", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f9b66beeb19accce98ab10719819b2add4e40b22afb70ece61306ac832793a78", 
+   "name": "plugins/module_utils/network/awplus/facts/user/user.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/facts/user/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/awplus/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/network/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a92cbceddaa909001d75ceb7120babded8d713b7be85aff835d51d4a96152362", 
+   "name": "plugins/module_utils/awplus.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/providers", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e6a7aae25c7f044382a16395ac5988a688faeceb10c726fb1c872c597cefc068", 
+   "name": "plugins/module_utils/providers/providers.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f7aa6dc5cf8ef418f77a8afb94b4e69989fc8df02e1e132911e308c437b4ad91", 
+   "name": "plugins/module_utils/providers/module.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/providers/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/module_utils/utils", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "439e95e3709769f630c1e9dcc3b0cd2f6ef65c117ee5214e9b81a10a2efe04e1", 
+   "name": "plugins/module_utils/utils/complex_constructor.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/utils/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "4de4fd66216f0b5378554bac29798f75d176b03a676660f22fc21d3676aa1776", 
+   "name": "plugins/module_utils/utils/utils.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "77dcc76a4a79dcd97a63328edc58ad3a89405cea242bc42e88120264fe32f4e3", 
+   "name": "plugins/module_utils/connection.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/module_utils/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/cliconf", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e66e9d847773daef75f7154989910446d3e2862669843f6e09d9ae3ee62e1125", 
+   "name": "plugins/cliconf/awplus.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/cliconf/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/modules", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "3deb7c333b90299bd258ab0ef4443ac5e090c108316485fd7a4198839881f652", 
+   "name": "plugins/modules/awplus_l3_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "b1a8a13d65b0daccc0d9aab71fbf1ca2db9980ff4a7733d7cbdb43c865716923", 
+   "name": "plugins/modules/awplus_ntp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d85ec9de8dc892fc65a49c748ad980ed19865b2b759ade3842f2a9e8808322e4", 
+   "name": "plugins/modules/awplus_ipv6_ospf.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "2be5e7c1ffb32d0432c655177b33996a3fc6d8189024e27aea49fd5190a2414b", 
+   "name": "plugins/modules/awplus_lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "b66358a7f03151ab5b87dedff5ec9ee051dac6410d107a4ed248522c018d70b7", 
+   "name": "plugins/modules/awplus_lldp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7869f385ef30491673f7140cdb1fa7bdc6b00981a4ba17b0392261ffb5654310", 
+   "name": "plugins/modules/awplus_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8614f0bf752c24532bcf9e5064a1a382af227ef769eab200d2b29e1486fedaa4", 
+   "name": "plugins/modules/awplus_facts.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "f2294e74bcb1d5a3c13921e291e977ce9137e45e3394fa5f616f8bfd87552a6e", 
+   "name": "plugins/modules/awplus_static_route.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "eb5e936dcdd59bad81bb89a9304feb7e96a1b92c46ec88933e64408f415be6c6", 
+   "name": "plugins/modules/awplus_ospf.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "7927532cf5cb9dc49862f3fe4ed19f5a6113a4630a8d05795e59793bbe6cad3d", 
+   "name": "plugins/modules/awplus_rip.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c060cd8b54ed3ed2adfc97457ae444d6b4344095201f9ccca7698630fa9ab376", 
+   "name": "plugins/modules/awplus_logging.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "8c798a8777790eaa195e44fb3d927bade8a32335677a168b1b13416f7093910e", 
+   "name": "plugins/modules/awplus_lacp_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e063acdd5fc874449525c4776d9cdb9e40573cf905989dda6884a6d1a4707176", 
+   "name": "plugins/modules/awplus_linkagg.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "69eb1e4c05d60ce4a09ca621efa1ae79018b735f102bae9cc0f6d35e9f3e3c14", 
+   "name": "plugins/modules/awplus_lldp_global.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ab0913b6bbac1e636ed1d054fa6b3f188945c60d4a2ebf56c175057367868974", 
+   "name": "plugins/modules/awplus_system.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "970ee8f4b57ebf56de0aa2832f1587da3fb08c3e4d704bc67389c5476cde6e7b", 
+   "name": "plugins/modules/awplus_vlans.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ce89796579be0ffe1cff0ab42a5683210d791897115825f707a5f357891ca51f", 
+   "name": "plugins/modules/awplus_lacp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "07ebb3d03bf7c6b3413241782cd6e660fdbeaa2f1c9619a1320a505bfeae5ecb", 
+   "name": "plugins/modules/awplus_ping.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "de31dde5d8277d1e78e245cfe535123c6451be02e7a7432b76f500af75b5a689", 
+   "name": "plugins/modules/awplus_openflow.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "713d6f96724a08d75bb9ef1a1a056772a5ca1cad408c87229964a0a2035a01b3", 
+   "name": "plugins/modules/awplus_static_lag_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "66b3b9004b6401f0822a020932f73d3cff8ec11deca494de9a23ca89d2b467b7", 
+   "name": "plugins/modules/awplus_vrf.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ef1bd80c8a5f3ebd3c3544fa5d67e122a2604384de1eeae86b0753383567056d", 
+   "name": "plugins/modules/awplus_config.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "6bd885e7caaf81e4a5c14509133752701ea4a6418b4937ce713d29a96b7ba88a", 
+   "name": "plugins/modules/awplus_banner.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "d105c00f486e227685e6da84a7c5177e940e036c21aeff91d8275c22e1017553", 
+   "name": "plugins/modules/awplus_vrfs.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "aa4a7b00113a668d14542a187fbc752d34359268949cbb53ac1416423c1cc36f", 
+   "name": "plugins/modules/awplus_l2_interfaces.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "528887baf84e838f73a47787a6fc19056b524e66b71a4dce52463775aefb12f0", 
+   "name": "plugins/modules/awplus_user.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "a6c7090caa39235553c929b3583a7d9c9a6b1f2a30cf926351715836c165c717", 
+   "name": "plugins/modules/awplus_command.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/modules/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e4b86e50a9f3061ea3f5f984aa7e191548a68b397bf468f14c6a439c6e3f6566", 
+   "name": "plugins/modules/awplus_bgp.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "dir", 
+   "chksum_sha256": null, 
+   "name": "plugins/terminal", 
+   "chksum_type": null, 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "440edfaa55e41a58806c1e389eac6fa5bf44b389de04cd5a5f8b8ff5f856f1e5", 
+   "name": "plugins/terminal/awplus.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 
+   "name": "plugins/terminal/__init__.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ca6fbfb8d3ffd1322ca4abb8e3b8ff4f413eb0f2fe8123b5d548da474f0eb4f8", 
+   "name": "yamllint.yaml", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "276c876e0a07a51621ecb1e70be23ea955ec32ec0d14ace5a7931baf86e8f3b9", 
+   "name": "dev-requirements.txt", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "03ce5423bb504aad3890a2e8575bdfee9b7195c09c1536206acf01f1ee56a53e", 
+   "name": "CHANGELOG.rst", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "c9df6fe4366dfbf8a00aa093ea2b05410c8b7dea161309c4f7cbbcac8110aaff", 
+   "name": "get_version.py", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "ea3a13290780ca1dad77ddbe4a9dbd3554a9beb6042c95d32ba510f7f4f9da2b", 
+   "name": ".gitignore", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }, 
+  {
+   "ftype": "file", 
+   "chksum_sha256": "aebe4bdb98f12b2fa123e189f67dfd8c3a49e21daecd64f500bbfbae8653c7c1", 
+   "name": "README.md", 
+   "chksum_type": "sha256", 
+   "format": 1
+  }
+ ], 
+ "format": 1
+}
