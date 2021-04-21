@@ -6,9 +6,8 @@ awplus    # awplus group
 #eos      # Arista EOS group
 
 [awplus]
-# multiple hosts can be set
 aw1 ansible_host=192.168.2.100
-#aw2 ansible_host=xxxxxx
+aw2 ansible_host=192.168.2.200
 
 [awplus:vars]
 ansible_become=yes
