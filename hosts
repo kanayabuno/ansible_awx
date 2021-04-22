@@ -13,8 +13,8 @@ aw2 ansible_host=192.168.2.200
 ansible_become=yes
 ansible_become_method=enable
 ansible_network_os=awplus
-ansible_user=manager
-ansible_password=friend
+#ansible_user=manager
+#ansible_password=friend
 
 #[eos]
 #veos01 ansible_host=veos-01.example.net
