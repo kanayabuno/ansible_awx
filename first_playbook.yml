@@ -1,13 +1,12 @@
 ---
 - name: test
   connection: network_cli
-  #connection: local
   hosts: all
-  #hosts: localhost
   collections:
     - alliedtelesis.awplus
   tasks:
     - name: run show running-config                         # task name
+      include_vars: secret.yml
       awplus_command:
         commands: show running-config
         #register: before_config                               # store the result in before_config
