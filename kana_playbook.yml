@@ -1,33 +1,33 @@
 ---
-- name: test for aw1
-  connection: network_cli
-  hosts: aw1
-  collections:
-    - alliedtelesis.awplus
-  tasks:
-    - name: run show running-config                         # task name
-      awplus_command:                                       # module name
-        commands: show running-config
-
-    - name: create vlan3
-      awplus_vlans:
-        config:
-          - vlan_id: 2
-            name: vlan2
-          - vlan_id: 3
-            name: vlan3
-
-    - name: make port2 trunk port and port23 in vlan3
-      awplus_l2_interfaces:
-        config:
-          - name: port1.0.2
-            trunk:
-              allowed_vlans: 1,3
-              native_vlan: 2
-
-          - name: port1.0.23
-            access:
-              vlan: 3
+#- name: test for aw1
+#  connection: network_cli
+#  hosts: aw1
+#  collections:
+#    - alliedtelesis.awplus
+#  tasks:
+#    - name: run show running-config                         # task name
+#      awplus_command:                                       # module name
+#        commands: show running-config
+#
+#    - name: create vlan3
+#      awplus_vlans:
+#        config:
+#          - vlan_id: 2
+#            name: vlan2
+#          - vlan_id: 3
+#            name: vlan3
+#
+#    - name: make port2 trunk port and port23 in vlan3
+#      awplus_l2_interfaces:
+#        config:
+#          - name: port1.0.2
+#            trunk:
+#              allowed_vlans: 1,3
+#              native_vlan: 2
+#
+#          - name: port1.0.23
+#            access:
+#              vlan: 3
 
 - name: test for aw2
   connection: network_cli
