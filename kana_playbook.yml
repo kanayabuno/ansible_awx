@@ -37,33 +37,40 @@
             access:
               vlan: 3
 
-              #- name: test for aw2
-              #  connection: network_cli
-              #  hosts: aw2
-              #  collections:
-              #    - alliedtelesis.awplus
-              #  tasks:
-              #    - name: run show running-config                         # task name
-              #      awplus_command:                                       # module name
-              #        commands: show running-config
-              #
-              #    - name: create vlan3
-              #      awplus_vlans:
-              #        config:
-              #          - vlan_id: 2
-              #            name: vlan2
-              #          - vlan_id: 3
-              #            name: vlan3
-              #
-              #    - name: make port1 trunk port and port25 in vlan3
-              #      awplus_l2_interfaces:
-              #        config:
-              #          - name: port1.0.1
-              #            trunk:
-              #              allowed_vlans: 1,3
-              #              native_vlan: 2
-              #
-              #          - name: port1.0.25
-              #            access:
-              #              vlan: 3
+- name: test for aw2
+  connection: network_cli
+  hosts: aw2
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: run show running-config                         # task name
+      awplus_command:                                       # module name
+        commands: show running-config
+
+    - name: create vlan3
+      awplus_vlans:
+        config:
+          - vlan_id: 2
+          - vlan_id: 3
+        state: merged
+
+    - name: assign IP to vlan3
+      awplus_l3_interfaces:
+        config:
+          - name: vlan3
+            ipv4:
+              - address: 192.168.3.2/24
+        state: merged
+
+    - name: make port1 trunk port and port25 in vlan3
+      awplus_l2_interfaces:
+        config:
+          - name: port1.0.1
+            trunk:
+              allowed_vlans: 1,3
+              native_vlan: 2
+
+          - name: port1.0.25
+            access:
+              vlan: 3
 
