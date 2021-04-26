@@ -31,7 +31,7 @@
 
 - name: test for aw2
   connection: network_cli
-  hosts: aw1
+  hosts: aw2
   collections:
     - alliedtelesis.awplus
   tasks:
