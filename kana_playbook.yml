@@ -15,17 +15,27 @@
           - vlan_id: 2
           - vlan_id: 3
 
-            #    - name: make port2 trunk port and port23 in vlan3
-            #      awplus_l2_interfaces:
-            #        config:
-            #          - name: port1.0.2
-            #            trunk:
-            #              allowed_vlans: 1,3
-            #              native_vlan: 2
-            #
-            #          - name: port1.0.23
-            #            access:
-            #              vlan: 3
+        state: merged
+
+    - name: assign ip to vlan3
+      awplus_l3_interfaces:
+        config:
+          - name: vlan3
+            ipv4:
+              - address: 192.168.3.1/24
+        state: merged
+
+    - name: make port2 trunk port and port23 in vlan3
+      awplus_l2_interfaces:
+        config:
+          - name: port1.0.2
+            trunk:
+              allowed_vlans: 1,3
+              native_vlan: 2
+
+          - name: port1.0.23
+            access:
+              vlan: 3
 
               #- name: test for aw2
               #  connection: network_cli
