@@ -1,49 +1,49 @@
 ---
-- name: test for aw2(x510)
-  connection: network_cli
-  hosts: aw2
-  collections:
-    - alliedtelesis.awplus
-  tasks:
-    - name: run show running-config
-      awplus_command:
-        commands: show running-config
-
-    - name: create vlan4,5
-      awplus_vlans:
-        config:
-          - vlan_id: 4
-          - vlan_id: 5
-        state: merged
-
-    - name: assign IP to vlan4,5
-      awplus_l3_interfaces:
-        config:
-          - name: vlan4
-            ipv4:
-              - address: 192.168.4.5/24
-          - name: vlan5
-            ipv4:
-              - address: 192.168.5.10/24
-        state: merged
-
-    - name: add a static route
-      awplus_static_route:
-          prefix: 192.168.3.0
-          mask: 24
-          next_hop: 192.168.5.5
-
-    - name: make port1 trunk port, add port25 in vlan4
-      awplus_l2_interfaces:
-        config:
-          - name: port1.0.1
-            trunk:
-              allowed_vlans: 100,5
-
-          - name: port1.0.25
-            access:
-              vlan: 4
-        state: merged
+#- name: test for aw2(x510)
+#  connection: network_cli
+#  hosts: aw2
+#  collections:
+#    - alliedtelesis.awplus
+#  tasks:
+#    - name: run show running-config
+#      awplus_command:
+#        commands: show running-config
+#
+#    - name: create vlan4,5
+#      awplus_vlans:
+#        config:
+#          - vlan_id: 4
+#          - vlan_id: 5
+#        state: merged
+#
+#    - name: assign IP to vlan4,5
+#      awplus_l3_interfaces:
+#        config:
+#          - name: vlan4
+#            ipv4:
+#              - address: 192.168.4.5/24
+#          - name: vlan5
+#            ipv4:
+#              - address: 192.168.5.10/24
+#        state: merged
+#
+#    - name: add a static route
+#      awplus_static_route:
+#          prefix: 192.168.3.0
+#          mask: 24
+#          next_hop: 192.168.5.5
+#
+#    - name: make port1 trunk port, add port25 in vlan4
+#      awplus_l2_interfaces:
+#        config:
+#          - name: port1.0.1
+#            trunk:
+#              allowed_vlans: 100,5
+#
+#          - name: port1.0.25
+#            access:
+#              vlan: 4
+#        state: merged
 
 - name: test for aw1
   connection: network_cli
