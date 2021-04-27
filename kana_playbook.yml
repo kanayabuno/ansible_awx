@@ -74,6 +74,12 @@
               - address: 192.168.5.5/24
         state: merged
 
+    - name: add a static route
+      awplus_static_route:
+          prefix: 192.168.4.0
+          mask: 24
+          next_hop: 192.168.5.10
+
     - name: make port2 trunk port and port23 in vlan3
       awplus_l2_interfaces:
         config:
