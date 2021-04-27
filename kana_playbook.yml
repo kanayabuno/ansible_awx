@@ -1,51 +1,44 @@
 ---
-#- name: test for aw2(x510)
-#  connection: network_cli
-#  hosts: aw2
-#  collections:
-#    - alliedtelesis.awplus
-#  tasks:
-#    - name: run show running-config
-#      awplus_command:
-#        commands: show running-config
-#
-#    - name: create vlan4,5
-#      awplus_vlans:
-#        config:
-#          - vlan_id: 4
-#          - vlan_id: 5
-#        state: merged
-#
-#    - name: assign IP to vlan4,5
-#      awplus_l3_interfaces:
-#        config:
-#          - name: vlan4
-#            ipv4:
-#              - address: 192.168.4.5/24
-#          - name: vlan5
-#            ipv4:
-#              - address: 192.168.5.10/24
-#        state: merged
-#
-#    - name: add a static route
-#      awplus_static_route:
-#          prefix: 192.168.3.0
-#          mask: "24"
-#          next_hop: 192.168.5.5
-#
-#    - name: make port1 trunk port, add port25 in vlan4
-#      awplus_l2_interfaces:
-#        config:
-#          - name: port1.0.1
-#            trunk:
-#              allowed_vlans: 100,5
-#
-#          - name: port1.0.25
-#            access:
-#              vlan: 4
-#        state: merged
+- name: test for aw2(x510)
+  connection: network_cli
+  hosts: aw2
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: run show running-config
+      awplus_command:
+        commands: show running-config
 
-- name: test for aw1
+    - name: create vlan4
+      awplus_vlans:
+        config:
+          - vlan_id: 4
+        state: merged
+
+    - name: assign IP to vlan4,5
+      awplus_l3_interfaces:
+        config:
+          - name: vlan4
+            ipv4:
+              - address: 192.168.4.5/24
+        state: merged
+
+    - name: add a static route
+      awplus_static_route:
+          prefix: 192.168.3.0
+          mask: "24"
+          next_hop: 192.168.2.100
+
+    - name: make port1 trunk port, add port25 in vlan4
+      awplus_l2_interfaces:
+        config:
+
+          - name: port1.0.25
+            access:
+              vlan: 4
+        state: merged
+
+- name: test for aw1(x930)
   connection: network_cli
   hosts: aw1
   collections:
@@ -55,11 +48,10 @@
       awplus_command:
         commands: show running-config
 
-    - name: create vlan3,5
+    - name: create vlan3
       awplus_vlans:
         config:
           - vlan_id: 3
-          - vlan_id: 5
 
         state: merged
 
@@ -69,24 +61,17 @@
           - name: vlan3
             ipv4:
               - address: 192.168.3.5/24
-          - name: vlan5
-            ipv4:
-              - address: 192.168.5.5/24
         state: merged
 
     - name: add a static route
       awplus_static_route:
           prefix: 192.168.4.0
           mask: "24"
-          next_hop: 192.168.5.10
+          next_hop: 192.168.2.200
 
     - name: make port2 trunk port and port23 in vlan3
       awplus_l2_interfaces:
         config:
-          - name: port1.0.2
-            trunk:
-              allowed_vlans: 100,3
-
           - name: port1.0.23
             access:
               vlan: 3
