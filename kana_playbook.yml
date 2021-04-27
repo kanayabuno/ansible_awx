@@ -30,7 +30,7 @@
 #    - name: add a static route
 #      awplus_static_route:
 #          prefix: 192.168.3.0
-#          mask: 24
+#          mask: "24"
 #          next_hop: 192.168.5.5
 #
 #    - name: make port1 trunk port, add port25 in vlan4
@@ -77,7 +77,7 @@
     - name: add a static route
       awplus_static_route:
           prefix: 192.168.4.0
-          mask: 24
+          mask: "24"
           next_hop: 192.168.5.10
 
     - name: make port2 trunk port and port23 in vlan3
