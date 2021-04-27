@@ -15,7 +15,7 @@
           - vlan_id: 4
         state: merged
 
-    - name: assign IP to vlan4,5
+    - name: assign IP to vlan4
       awplus_l3_interfaces:
         config:
           - name: vlan4
@@ -29,7 +29,7 @@
           mask: "24"
           next_hop: 192.168.2.100
 
-    - name: make port1 trunk port, add port25 in vlan4
+    - name: add port25 in vlan4
       awplus_l2_interfaces:
         config:
 
@@ -69,7 +69,7 @@
           mask: "24"
           next_hop: 192.168.2.200
 
-    - name: make port2 trunk port and port23 in vlan3
+    - name: add port23 in vlan3
       awplus_l2_interfaces:
         config:
           - name: port1.0.23
