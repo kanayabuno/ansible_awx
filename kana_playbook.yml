@@ -5,16 +5,12 @@
   collections:
     - alliedtelesis.awplus
   tasks:
-    - name: run show running-config
-      awplus_command:
-        commands: show running-config
-
-    - name: add a static route
-      awplus_static_route:
-          prefix: 192.168.3.0
-          mask: "24"
-          next_hop: 192.168.2.100
-          state: present
+    #    - name: add a static route
+    #      awplus_static_route:
+    #          prefix: 192.168.3.0
+    #          mask: "24"
+    #          next_hop: 192.168.2.100
+    #          state: present
 
     - name: create vlan4
       awplus_vlans:
