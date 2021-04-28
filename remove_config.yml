@@ -1,0 +1,54 @@
+---
+- name: test for aw2(x510)
+  connection: network_cli
+  hosts: aw2
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: clear all ports
+      awplus_interfaces:
+        config:
+          - name: "{{ item }}"
+        state: deleted
+      loop:
+        - port1.0.25
+
+    - name: delete all vlans
+      awplus_vlans:
+        config:
+          - vlan_id: 4
+        state: deleted
+
+    - name: delete a static route
+      awplus_static_route:
+          prefix: 192.168.3.0
+          mask: "24"
+          next_hop: 192.168.2.100
+          state: absent
+
+- name: test for aw1(x930)
+  connection: network_cli
+  hosts: aw1
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: clear all ports
+      awplus_interfaces:
+        config:
+          - name: "{{ item }}"
+        state: deleted
+      loop:
+        - port1.0.23
+
+    - name: delete all vlans
+      awplus_vlans:
+        config:
+          - vlan_id: 3
+        state: deleted
+
+    - name: delete a static route
+      awplus_static_route:
+          prefix: 192.168.4.0
+          mask: "24"
+          next_hop: 192.168.2.200
+          state: absent
