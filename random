@@ -1,0 +1,10 @@
+curl -k -s --user kana:kana -X POST -H "Content-Type: application/json" \
+     "http://192.168.49.2:32281/api/v2/users/" \
+     --data '{
+  "email": "a@a.com",
+  "first_name": "a",
+  "is_superuser": True,
+  "last_name": "a",
+  "password": "temple123",
+  "username": "allied"
+            }' | python3 -m json.tool
