@@ -11,7 +11,6 @@
           - name: port1.0.25
             openflow: true
 
-        ports:
           - name: port1.0.13
             openflow: true
 
@@ -27,7 +26,6 @@
           - name: port1.0.23
             openflow: true
 
-        ports:
           - name: port1.0.13
             openflow: true
 

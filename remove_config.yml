@@ -14,6 +14,15 @@
         - port1.0.25
         - port1.0.13
 
+    - name: no openflow port
+      awplus_openflow:
+        ports:
+          - name: port1.0.25
+            openflow: false
+
+          - name: port1.0.13
+            openflow: false
+
     - name: delete all vlans
       awplus_vlans:
         config:
@@ -54,3 +63,13 @@
         #          mask: "24"
         #          next_hop: 192.168.2.200
         #          state: absent
+
+    - name: no openflow port
+      awplus_openflow:
+        ports:
+          - name: port1.0.23
+            openflow: false
+
+          - name: port1.0.13
+            openflow: false
+
