@@ -1,7 +1,7 @@
 ---
-- name: test for aw2(x510)
+- name: x510
   connection: network_cli
-  hosts: aw2
+  hosts: x510
   collections:
     - alliedtelesis.awplus
   tasks:
@@ -35,9 +35,9 @@
               vlan: 4
         state: merged
 
-- name: test for aw1(x930)
+- name: x930
   connection: network_cli
-  hosts: aw1
+  hosts: x930
   collections:
     - alliedtelesis.awplus
   tasks:
