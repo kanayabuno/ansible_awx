@@ -12,6 +12,7 @@
         state: deleted
       loop:
         - port1.0.25
+        - port1.0.13
 
     - name: delete all vlans
       awplus_vlans:
@@ -39,6 +40,7 @@
         state: deleted
       loop:
         - port1.0.23
+        - port1.0.13
 
     - name: delete all vlans
       awplus_vlans:
