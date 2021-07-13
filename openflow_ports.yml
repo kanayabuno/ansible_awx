@@ -11,6 +11,10 @@
           - name: port1.0.25
             openflow: true
 
+        ports:
+          - name: port1.0.13
+            openflow: true
+
 - name: x930
   connection: network_cli
   hosts: x930
@@ -21,5 +25,9 @@
       awplus_openflow:
         ports:
           - name: port1.0.23
+            openflow: true
+
+        ports:
+          - name: port1.0.13
             openflow: true
 
