@@ -18,7 +18,7 @@
           - vlan_id: 4
         state: merged
 
-    - name: assign IP to vlan4
+    - name: assign ip to vlan4
       awplus_l3_interfaces:
         config:
           - name: vlan4

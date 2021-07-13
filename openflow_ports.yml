@@ -1,0 +1,34 @@
+---
+- name: x510
+  connection: network_cli
+  hosts: x510
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: add openflow ports
+      awplus_openflow:
+        ports:
+          - name: port1.0.1
+            openflow: true
+
+          - name: port1.0.25
+            openflow: true
+
+- name: x930
+  connection: network_cli
+  hosts: x930
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: add openflow ports
+      awplus_openflow:
+        ports:
+          - name: port1.0.1
+            openflow: true
+
+          - name: port1.0.2
+            openflow: true
+
+          - name: port1.0.23
+            openflow: true
+
