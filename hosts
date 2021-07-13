@@ -6,8 +6,8 @@ awplus    # awplus group
 #eos      # Arista EOS group
 
 [awplus]
-aw1 ansible_host=192.168.2.100
-aw2 ansible_host=192.168.2.200
+x930 ansible_host=192.168.2.100
+x510 ansible_host=192.168.2.200
 
 [awplus:vars]
 ansible_become=yes
