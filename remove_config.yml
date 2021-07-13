@@ -1,7 +1,7 @@
 ---
-- name: test for aw2(x510)
+- name: test for x510
   connection: network_cli
-  hosts: aw2
+  hosts: x510
   collections:
     - alliedtelesis.awplus
   tasks:
@@ -26,9 +26,9 @@
         #          next_hop: 192.168.2.100
         #          state: absent
 
-- name: test for aw1(x930)
+- name: test for x930
   connection: network_cli
-  hosts: aw1
+  hosts: x930
   collections:
     - alliedtelesis.awplus
   tasks:
