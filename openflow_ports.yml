@@ -8,9 +8,6 @@
     - name: add openflow ports
       awplus_openflow:
         ports:
-          - name: port1.0.1
-            openflow: true
-
           - name: port1.0.25
             openflow: true
 
@@ -23,12 +20,6 @@
     - name: add openflow ports
       awplus_openflow:
         ports:
-          - name: port1.0.1
-            openflow: true
-
-          - name: port1.0.2
-            openflow: true
-
           - name: port1.0.23
             openflow: true
 
