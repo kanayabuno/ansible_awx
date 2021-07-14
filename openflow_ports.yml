@@ -11,6 +11,9 @@
           - name: port1.0.25
             openflow: true
 
+          - name: port1.0.13
+            openflow: true
+
         controllers:
           - protocol: tcp
             address: 192.168.1.2
@@ -19,8 +22,6 @@
 
         native_vlan: 4090
 
-          - name: port1.0.13
-            openflow: true
 
 - name: x930
   connection: network_cli
