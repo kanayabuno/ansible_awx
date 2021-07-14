@@ -22,7 +22,16 @@
 
           - name: port1.0.13
             openflow: false
+
+        controllers:
+          - name: "con1"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 10
+
+        native_vlan: 4090
         state: absent
+
 
     - name: delete all vlans
       awplus_vlans:
