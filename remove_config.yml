@@ -22,6 +22,7 @@
 
           - name: port1.0.13
             openflow: false
+        state: absent
 
     - name: delete all vlans
       awplus_vlans:
@@ -72,4 +73,6 @@
 
           - name: port1.0.13
             openflow: false
+
+        state: absent
 
