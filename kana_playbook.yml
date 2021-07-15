@@ -22,7 +22,7 @@
         config:
           - name: vlan4
             ipv4:
-              - address: 192.168.4.400/24
+              - address: 192.168.4.100/24
         state: merged
 
     - name: add port25 in vlan4
@@ -56,7 +56,7 @@
         config:
           - name: vlan3
             ipv4:
-              - address: 192.168.3.600/24
+              - address: 192.168.3.100/24
         state: merged
 
         #    - name: add a static route
