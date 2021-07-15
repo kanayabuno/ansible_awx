@@ -14,24 +14,24 @@
     - name: create vlan4
       awplus_vlans:
         config:
-          - vlan_id: 3
+          - vlan_id: 4
         state: merged
 
-    - name: assign ip to vlan3
+    - name: assign ip to vlan4
       awplus_l3_interfaces:
         config:
           - name: vlan4
             ipv4:
-              - address: 192.168.3.300/24
+              - address: 192.168.4.400/24
         state: merged
 
-    - name: add port25 in vlan3
+    - name: add port25 in vlan4
       awplus_l2_interfaces:
         config:
 
           - name: port1.0.25
             access:
-              vlan: 3
+              vlan: 4
         state: merged
 
 - name: x930
