@@ -40,7 +40,7 @@
       copy:
         content: "{{config_after.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
-        delegate_to: access_machine
+      delegate_to: access_machine
 
 - name: x930
   connection: network_cli
