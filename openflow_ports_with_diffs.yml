@@ -51,7 +51,7 @@
       delegate_to: access_machine #specify which host to copy to
 
     - name: Generate diff
-      fact_diff:
+      ansible.utils.fact_diff:
         before: "{{config_before.stdout[0]}}"
         after: "{{config_after.stdout[0]}}"
       register: diff_config
