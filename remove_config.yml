@@ -14,24 +14,9 @@
         - port1.0.25
         - port1.0.13
 
-    - name: no openflow port
+    - name: remove openflow config
       awplus_openflow:
-              #        ports:
-              #          - name: port1.0.25
-              #            openflow: false
-              #
-              #          - name: port1.0.13
-              #            openflow: false
-              #
-              #        controllers:
-              #          - name: "con1"
-              #            protocol: tcp
-              #            address: 192.168.1.2
-              #            ssl_port: 10
-              #
-              #        native_vlan: 4090
         state: absent
-
 
     - name: delete all vlans
       awplus_vlans:
@@ -74,14 +59,7 @@
         #          next_hop: 192.168.2.200
         #          state: absent
 
-    - name: no openflow port
+    - name: remove openflow config
       awplus_openflow:
-        ports:
-          - name: port1.0.23
-            openflow: false
-
-          - name: port1.0.13
-            openflow: false
-
         state: absent
 

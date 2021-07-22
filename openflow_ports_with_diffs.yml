@@ -52,6 +52,12 @@
   collections:
     - alliedtelesis.awplus
   tasks:
+    # Save current config on the switch
+    - name: run show running-config
+      awplus_command:
+        commands: show running-config
+      register: config_before
+
     - name: add openflow ports
       awplus_openflow:
         controllers:
@@ -69,3 +75,19 @@
 
           - name: port1.0.13
             openflow: true
+
+    # Save current config on the switch
+    - name: run show running-config
+      awplus_command:
+        commands: show running-config
+      register: config_after
+
+    - name: save before and after config change
+      copy:
+        content: "{{config_before.stdout[0]}}"
+        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before.txt"
+
+        content: "{{config_after.stdout[0]}}"
+        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
+
+      delegate_to: access_machine #specify which host to copy to
