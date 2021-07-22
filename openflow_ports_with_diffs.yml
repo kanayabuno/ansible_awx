@@ -9,7 +9,7 @@
     - name: run show running-config
       awplus_command:
         commands: show running-config
-      register: config-before
+      register: config_before
 
     # Create a directory if it doesn't exist
     - name: create a directory
@@ -40,15 +40,15 @@
     - name: run show running-config
       awplus_command:
         commands: show running-config
-      register: config-after
+      register: config_after
 
     - name: save before and after config change
       copy:
-        content: "{{config-before.stdout[0]}}"
+        content: "{{config_before.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before.txt"
 
       copy:
-        content: "{{config-after.stdout[0]}}"
+        content: "{{config_after.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
 
 - name: x930
