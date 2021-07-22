@@ -11,12 +11,6 @@
         commands: show running-config
       register: config_before
 
-    # Create a directory if it doesn't exist
-    - name: create a directory
-      file:
-        path: $HOME/ansible-backups
-        state: directory
-
     # Add openflow config
     - name: add openflow ports
       awplus_openflow:
@@ -43,9 +37,8 @@
       register: config_after
 
     - name: save before and after config change
-      copy:
-        content: "{{config_before.stdout[0]}}"
-        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before.txt"
+      fetch: dest=$HOME
+      with_items: "{{config_before.stdout[0]}}"
 
       copy:
         content: "{{config_after.stdout[0]}}"
