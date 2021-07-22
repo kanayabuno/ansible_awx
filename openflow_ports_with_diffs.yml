@@ -111,12 +111,8 @@
 
       delegate_to: access_machine #specify which host to copy to
 
-    - name: save diff file
-      diff:
-        source: "{{config_before.stdout[0]}}"
-        target: "{{config_after.stdout[0]}}"
-        source_type: string
-        target_type: string
+    - name: Generate diff
+      command: diff "{{config_before.stdout[0]}}" "{{config_after.stdout[0]}}"
       register: diff_config
 
     - name: save diff file
