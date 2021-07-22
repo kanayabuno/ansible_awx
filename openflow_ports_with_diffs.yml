@@ -37,15 +37,10 @@
       register: config_after
 
     - name: save before and after config change
-      fetch:
+      copy:
         content: "{{config_after.stdout[0]}}"
-        dest: $HOME/ansible-backups/config_after-{{ inventory_hostname }}
-
-      with_items: "{{config_before.stdout[0]}}"
-
-      #      copy:
-      #        content: "{{config_after.stdout[0]}}"
-      #        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
+        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
+        delegate_to: access_machine
 
 - name: x930
   connection: network_cli
