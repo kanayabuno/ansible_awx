@@ -2,7 +2,7 @@
 import requests
 import json
 
-url = 'http://192.168.49.2:32281/api/v2/'
+url = 'http://192.168.99.100:31964/api/v2/'
 user = 'kana'
 pwd = 'kana'
 
@@ -42,10 +42,10 @@ data = {
 }
 
 # Create a new project
-response = requests.post(url + "projects/", auth=(user, pwd), headers=headers, json=data, verify=False)
-if response.status_code != 200:
-    print('Status:', response.status_code, 'Headers:', response.headers, 'Error Response:',response)
-    exit()
+#response = requests.post(url + "projects/", auth=(user, pwd), headers=headers, json=data, verify=False)
+#if response.status_code != 200:
+#    print('Status:', response.status_code, 'Headers:', response.headers, 'Error Response:',response)
+#    exit()
 
 #project_id = response.id
 
@@ -53,7 +53,15 @@ if response.status_code != 200:
 #response = requests.post(url + "projects/17", auth=(user, pwd), headers=headers, json=data, verify=False)
 #print('Status:', response.status_code, 'Headers:', response.headers, 'Error Response:',response)
 
-
+## Get a list of templates
+#response = requests.get(url + "job_templates/", auth=(user, pwd), headers=headers, verify=False)
+## Check for HTTP codes other than 200
+#if response.status_code != 200:
+#    print('Status:', response.status_code, 'Headers:', response.headers, 'Error Response:',response)
+#    exit()
+## Decode the JSON response into a dictionary and use the data
+#data = response.json()
+#print(data)
 
 
 
