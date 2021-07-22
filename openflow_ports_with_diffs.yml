@@ -36,15 +36,14 @@
         commands: show running-config
       register: config_after
 
-    - name: save before config change
+    - name: save before and after config change
       copy:
         content: "{{config_before.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before.txt"
-      delegate_to: access_machine #specify which host to copy to
 
-    - name: save after config change
         content: "{{config_after.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
+
       delegate_to: access_machine #specify which host to copy to
 
 - name: x930
@@ -83,14 +82,12 @@
         commands: show running-config
       register: config_after
 
-    - name: save before config change
+    - name: save before and after config change
       copy:
         content: "{{config_before.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before.txt"
-      delegate_to: access_machine #specify which host to copy to
 
-    - name: save after config change
         content: "{{config_after.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
-      delegate_to: access_machine #specify which host to copy to
 
+      delegate_to: access_machine #specify which host to copy to
