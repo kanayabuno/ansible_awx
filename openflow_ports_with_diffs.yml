@@ -37,7 +37,7 @@
       register: config_after
 
     - name: save before and after config change
-      ansible.buildin.fetch:
+      fetch:
         content: "{{config_after.stdout[0]}}"
         dest: $HOME/ansible-backups/config_after-{{ inventory_hostname }}
 
