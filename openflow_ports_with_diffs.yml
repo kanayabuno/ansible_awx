@@ -58,7 +58,7 @@
 
     - name: save diff file
       copy:
-        content: "{{diff_config}}"
+        content: "{{diff_config | to_nice_json}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-diff.txt"
 
       delegate_to: access_machine #specify which host to copy to
