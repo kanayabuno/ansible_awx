@@ -124,3 +124,15 @@
 
       delegate_to: access_machine #specify which host to copy to
 
+- name: access_machine
+  hosts: access_machine
+  tasks:
+    - name: Generate diff
+      command: diff $HOME/ansible-backups/x510-config-before.txt $HOME/ansible-backups/x510-config-after.txt
+      register: config_diff
+
+    - name: save diff file
+      copy:
+        content: "{{config_diff.stdout[0]}}"
+        dest: "$HOME/ansible-backups/x51-diff.txt"
+
