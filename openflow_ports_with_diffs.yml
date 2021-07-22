@@ -1,0 +1,76 @@
+---
+- name: x510
+  connection: network_cli
+  hosts: x510
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    # Save current config on the switch
+    - name: run show running-config
+      awplus_command:
+        commands: show running-config
+      register: config-before
+
+    # Create a directory if it doesn't exist
+    - name: create a directory
+      file:
+        path: $HOME/ansible-backups
+        state: directory
+
+    # Add openflow config
+    - name: add openflow ports
+      awplus_openflow:
+        ports:
+          - name: port1.0.25
+            openflow: true
+
+          - name: port1.0.13
+            openflow: true
+
+        controllers:
+          - name: "con1"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 10
+        state: present
+
+        native_vlan: 4090
+
+    # Save current config on the switch
+    - name: run show running-config
+      awplus_command:
+        commands: show running-config
+      register: config-after
+
+    - name: save before and after config change
+      copy:
+        content: "{{config-before.stdout[0]}}"
+        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before.txt"
+
+      copy:
+        content: "{{config-after.stdout[0]}}"
+        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
+
+- name: x930
+  connection: network_cli
+  hosts: x930
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: add openflow ports
+      awplus_openflow:
+        controllers:
+          - name: "con1"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 10
+        state: present
+
+        native_vlan: 4090
+
+        ports:
+          - name: port1.0.23
+            openflow: true
+
+          - name: port1.0.13
+            openflow: true
