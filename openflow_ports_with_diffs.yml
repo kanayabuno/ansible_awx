@@ -40,9 +40,9 @@
       fetch: dest=$HOME
       with_items: "{{config_before.stdout[0]}}"
 
-      copy:
-        content: "{{config_after.stdout[0]}}"
-        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
+      #      copy:
+      #        content: "{{config_after.stdout[0]}}"
+      #        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-after.txt"
 
 - name: x930
   connection: network_cli
