@@ -21,11 +21,11 @@
           - name: port1.0.13
             openflow: true
 
-            #        controllers:
-            #          - name: "con1"
-            #            protocol: tcp
-            #            address: 192.168.1.2
-            #            ssl_port: 10
+        controllers:
+          - name: "con1"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 10
         state: present
 
         native_vlan: 4090
@@ -77,11 +77,11 @@
 
     - name: add openflow ports
       awplus_openflow:
-        #        controllers:
-        #          - name: "con1"
-        #            protocol: tcp
-        #            address: 192.168.1.2
-        #            ssl_port: 10
+        controllers:
+          - name: "con1"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 10
         state: present
 
         native_vlan: 4090
@@ -121,20 +121,7 @@
 
     - name: save diff file
       copy:
-        content: "{{diff_config}}"
+        content: "{{diff_config | to_nice_json}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-diff.txt"
 
       delegate_to: access_machine #specify which host to copy to
-
-      #- name: access_machine
-      #  hosts: access_machine
-      #  tasks:
-      #    - name: Generate diff
-      #      command: diff $HOME/ansible-backups/x510-config-before.txt $HOME/ansible-backups/x510-config-after.txt
-      #      register: config_diff
-      #
-      #    - name: save diff file
-      #      copy:
-      #        content: "{{config_diff.stdout[0]}}"
-      #        dest: "$HOME/ansible-backups/x51-diff.txt"
-      #
