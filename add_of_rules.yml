@@ -14,3 +14,5 @@
       copy:
         content: "{{output.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-of-output.txt"
+
+      delegate_to: access_machine #specify which host to copy to
