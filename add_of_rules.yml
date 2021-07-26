@@ -1,0 +1,16 @@
+---
+- name: x510
+  connection: network_cli
+  hosts: x510
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: Run openflow hidden commands
+      awplus_command: 
+        commands: show openflow appctl dpctl
+      register: output
+
+    - name: save output
+      copy:
+        content: "{{config_before.stdout[0]}}"
+        dest: "$HOME/ansible-backups/{{inventory_hostname}}-of-output.txt"
