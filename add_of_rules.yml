@@ -12,5 +12,5 @@
 
     - name: save output
       copy:
-        content: "{{config_before.stdout[0]}}"
+        content: "{{output.stdout[0]}}"
         dest: "$HOME/ansible-backups/{{inventory_hostname}}-of-output.txt"
