@@ -1,0 +1,74 @@
+---
+- name: x510
+  connection: network_cli
+  hosts: x510
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+          #    - name: add a static route
+          #      awplus_static_route:
+          #          prefix: 192.168.3.0
+          #          mask: "24"
+          #          next_hop: 192.168.2.100
+
+    - name: create vlan4
+      awplus_vlans:
+        config:
+          - vlan_id: 4
+        state: merged
+
+    - name: assign ip to vlan4
+      awplus_l3_interfaces:
+        config:
+          - name: vlan4
+            ipv4:
+              - address: 192.168.4.100/24
+        state: merged
+
+    - name: add port25 in vlan4
+      awplus_l2_interfaces:
+        config:
+
+          - name: port1.0.25
+            access:
+              vlan: 4
+        state: merged
+
+- name: x930
+  connection: network_cli
+  hosts: x930
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: run show running-config
+      awplus_command:
+        commands: show running-config
+
+    - name: create vlan3
+      awplus_vlans:
+        config:
+          - vlan_id: 3
+
+        state: merged
+
+    - name: assign ip to vlan3
+      awplus_l3_interfaces:
+        config:
+          - name: vlan3
+            ipv4:
+              - address: 192.168.3.100/24
+        state: merged
+
+        #    - name: add a static route
+        #      awplus_static_route:
+        #          prefix: 192.168.4.0
+        #          mask: "24"
+        #          next_hop: 192.168.2.200
+
+    - name: add port23 in vlan3
+      awplus_l2_interfaces:
+        config:
+          - name: port1.0.23
+            access:
+              vlan: 3
+        state: merged
