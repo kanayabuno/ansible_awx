@@ -4,8 +4,12 @@
   tasks:
     - name: ping from vm1 to vm2
       shell: ping -c 1 -w 2 {{ hostvars['vm2'].ansible_host }}
+      register: result
+      failed_when: result.rc != 0
 - name: ping from vm2
   hosts: vm2
   tasks:
     - name: ping from vm2 to vm3
       shell: ping -c 1 -w 2 {{ hostvars['vm1'].ansible_host }}
+      register: result
+      failed_when: result.rc != 0
