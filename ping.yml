@@ -3,8 +3,8 @@
   hosts: vm1
   tasks:
     - name: ping from vm1 to vm2
-      #shell: ping -c 1 -w 2 {{ hostvars['vm2']['ansible_facts']['eth0']['ipv4']['address'] }}
-      shell: ping -c 1 -w 2 192.168.4.10
+      shell: ping -c 1 -w 2 {{ hostvars['vm2']['ansible_facts']['ansible_host'] }}
+      #shell: ping -c 1 -w 2 192.168.4.10
 - name: ping from vm2
   hosts: vm2
   tasks:
