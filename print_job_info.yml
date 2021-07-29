@@ -32,3 +32,4 @@
           inventory_name: {{ awx_inventory_name }}"
 
       delegate_to: access_machine #specify which host to copy to
+    ignore_errors: yes #ignore errors since some variables might not be applicable
