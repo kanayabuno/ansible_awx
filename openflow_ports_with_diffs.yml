@@ -39,7 +39,7 @@
     - name: save before config change
       copy:
         content: "{{config_before.stdout[0]}}"
-        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before-{{tower_job_id}}.txt"
+        dest: "$HOME/ansible-backups/{{inventory_hostname}}-config-before.txt"
 
       delegate_to: access_machine #specify which host to copy to
 
