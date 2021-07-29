@@ -24,7 +24,7 @@ access_machine ansible_host=11.4.16.135
 
 [access_machines:vars]
 ansible_user=kyabuno
-ansible_password=temple124
+ansible_password=temple123
 ansible_connection=ssh
 
 [vms]
