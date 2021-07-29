@@ -8,8 +8,8 @@ vms
 #eos      # Arista EOS group
 
 [awplus]
-x931 ansible_host=192.168.2.100
-x511 ansible_host=192.168.2.200
+x930 ansible_host=192.168.2.100
+x510 ansible_host=192.168.2.200
 
 [awplus:vars]
 ansible_connection=network_cli
@@ -24,7 +24,7 @@ access_machine ansible_host=10.4.16.135
 
 [access_machines:vars]
 ansible_user=kyabuno
-ansible_password=temple124
+ansible_password=temple123
 ansible_connection=ssh
 
 [vms]
