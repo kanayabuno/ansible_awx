@@ -1,0 +1,35 @@
+---
+- name: x510
+  connection: network_cli
+  hosts: x510
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+      register: config_after
+    - name: Create an empty file
+      file:
+        path: "$HOME/ansible-backups/job-{{ awx_job_id }}"
+        state: touch
+      delegate_to: access_machine #specify which host
+
+    - name: save job info in a file
+      lineinfile:
+        path: "$HOME/ansible-backups/job-{{ awx_job_id }}"
+        line: >
+          "jobID: {{ awx_job_id }}\n
+          launch_type: {{ awx_job_launch_type }}\n
+          template_id: {{ awx_job_template_name }}\n
+          project_revision: {{ awx_project_revision }}\n
+          user_email: {{ awx_user_email }}\n
+          firstname: {{ awx_user_first_name }}\n
+          lastname: {{ awx_user_last_name }}\n
+          userid: {{ awx_user_id }}\n
+          username: {{ awx_user_id }}\n
+          schedule_id: {{ awx_schedule_id }}\n
+          schedule_name: {{ awx_schedule_name }}\n
+          workflow_jobid: {{ awx_workflow_job_id }}\n
+          workflow_jobname: {{ awx_workflow_job_name }}\n
+          inventory_id: {{ awx_inventory_id }}\n
+          inventory_name: {{ awx_inventory_name }}"
+
+      delegate_to: access_machine #specify which host to copy to
