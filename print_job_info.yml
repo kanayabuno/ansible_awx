@@ -5,7 +5,6 @@
   collections:
     - alliedtelesis.awplus
   tasks:
-      register: config_after
     - name: Create an empty file
       file:
         path: "$HOME/ansible-backups/job-{{ awx_job_id }}"
