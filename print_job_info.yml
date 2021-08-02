@@ -15,7 +15,7 @@
       lineinfile:
         path: "$HOME/ansible-backups/job-{{ awx_job_id }}"
         line: >
-          "jobID: {{ awx_job_id }}\n""
+          "jobID: {{ awx_job_id }}\n
           launch_type: {{ awx_job_launch_type }}\n
           template_id: {{ awx_job_template_name }}\n
           project_revision: {{ awx_project_revision }}\n
