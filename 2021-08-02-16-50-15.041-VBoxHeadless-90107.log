@@ -1,0 +1,12 @@
+Log created: 2021-08-02T16:50:15.410160000Z
+Process ID:  90107 (0x15ffb)
+Parent PID:  89952 (0x15f60)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: minikube
+Arg[3]: --startvm
+Arg[4]: 10dcc854-ad2e-4ec2-b9c7-a0ed79420cbd
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
