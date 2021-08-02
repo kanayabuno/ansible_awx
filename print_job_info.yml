@@ -14,7 +14,7 @@
     - name: save job info in a file
       lineinfile:
         path: "$HOME/ansible-backups/job-{{ awx_job_id }}"
-        line: >
+        line: |+
           "jobID: {{ awx_job_id }}\n
           launch_type: {{ awx_job_launch_type }}\n
           template_id: {{ awx_job_template_name }}\n
