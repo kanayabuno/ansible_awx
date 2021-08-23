@@ -21,6 +21,9 @@
           - command: exit
           - command: platform hwfilter-size ipv4-full-ipv6
           - command: no loop-protection loop-detect
+          - command: interface port1.0.5
+          - command: thrash-limiting action none
+          - command: exit
           - command: exit
 
     - name: add openflow ports
