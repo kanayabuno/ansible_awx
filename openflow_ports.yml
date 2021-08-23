@@ -5,6 +5,23 @@
   collections:
     - alliedtelesis.awplus
   tasks:
+    - name: add vlans
+      awplus_vlans:
+        config:
+          - vlan_id: 4090
+        state: merged
+
+    - name: disable RSTP and IGMP snooping TCN Query Solicitation on the native VLAN. Set the IPv6 hardware filter size and disable loop protection
+      awplus_command:
+        commands:
+          - command: configure terminal
+          - command: no spanning-tree rstp enable
+          - command: interface vlan4090
+          - command: no ip igmp snooping tcn query solicit
+          - command: exit
+          - command: platform hwfilter-size ipv4-full-ipv6
+          - command: no loop-protection loop-detect
+
     - name: add openflow ports
       awplus_openflow:
         ports:
