@@ -28,6 +28,18 @@
 
     - name: add openflow ports
       awplus_openflow:
+        controllers:
+          - name: "con1"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 6653
+
+          - name: "con2"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 6654
+        state: present
+
         ports:
           - name: port1.0.25
             openflow: true
