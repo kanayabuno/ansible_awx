@@ -9,8 +9,8 @@
       awplus_vlans:
         config:
           - vlan_id: "{{ item }}"
-      loop: "{{ range(4080, 4090 + 1, 1)|list }}"
         state: merged
+      loop: "{{ range(4080, 4090 + 1, 1)|list }}"
 
     - name: disable RSTP and IGMP snooping TCN Query Solicitation on the native VLAN. Set the IPv6 hardware filter size and disable loop protection
       awplus_command:
