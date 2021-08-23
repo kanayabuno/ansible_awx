@@ -21,6 +21,7 @@
           - command: exit
           - command: platform hwfilter-size ipv4-full-ipv6
           - command: no loop-protection loop-detect
+          - command: exit
 
     - name: add openflow ports
       awplus_openflow:
