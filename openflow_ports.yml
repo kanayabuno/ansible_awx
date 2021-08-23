@@ -41,7 +41,7 @@
         state: present
 
         ports:
-          - name: port1.0.25
+          - name: port1.0.22-1.0.25
             openflow: true
 
           - name: port1.0.13
