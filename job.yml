@@ -1,0 +1,40 @@
+- connection: network_cli
+  hosts: x930-bottom
+  collections: alliedtelesis.awplus
+  tasks:
+  - name: Create vlans
+    awplus_vlans:
+      config:
+      - state: active
+        vlan_id: 200
+      - state: active
+        vlan_id: 456
+      - state: active
+        vlan_id: 4090
+      state: merged
+  - name: Add openflow config
+    awplus_openflow:
+      controllers:
+      - name: gauge
+        protocol: tcp
+        address: 192.168.200.200
+        ssl_port: 6654
+      - name: faucet
+        protocol: tcp
+        address: 192.168.200.200
+        ssl_port: 6653
+      ports:
+      - name: port1.0.1-1.0.4
+        openflow: true
+      native_vlan: 4090
+      state: present
+- connection: network_cli
+  hosts: x930-top
+  collections: alliedtelesis.awplus
+  tasks:
+  - name: Create vlans
+    awplus_vlans:
+      config:
+      - state: active
+        vlan_id: 4090
+      state: merged

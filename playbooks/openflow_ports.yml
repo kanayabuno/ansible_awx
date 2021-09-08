@@ -1,0 +1,87 @@
+---
+- name: x510
+  connection: network_cli
+  hosts: x510
+  collections:
+    - alliedtelesis.awplus
+  tasks:
+    - name: add vlans
+      awplus_vlans:
+        config:
+          - vlan_id: 300
+          - vlan_id: 400
+          - vlan_id: "{{ item }}"
+        state: merged
+      loop: "{{ range(4080, 4090 + 1, 1)|list }}"
+
+    - name: disable RSTP and IGMP snooping TCN Query Solicitation on the native VLAN. Set the IPv6 hardware filter size and disable loop protection
+      awplus_command:
+        commands:
+          - command: configure terminal
+          - command: no spanning-tree rstp enable
+          - command: interface vlan4090
+          - command: no ip igmp snooping tcn query solicit
+          - command: exit
+          - command: platform hwfilter-size ipv4-full-ipv6
+          - command: no loop-protection loop-detect
+          - command: interface port1.0.5
+          - command: thrash-limiting action none
+          - command: exit
+          - command: exit
+
+    - name: add openflow ports
+      awplus_openflow:
+        controllers:
+          - name: "con1"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 6653
+
+          - name: "con2"
+            protocol: tcp
+            address: 192.168.1.2
+            ssl_port: 6654
+        state: present
+
+        ports:
+          - name: port1.0.22-1.0.25
+            openflow: true
+
+          - name: port1.0.13
+            openflow: true
+
+        state: present
+
+        native_vlan: 4090
+
+    - name: shutdown ports
+      awplus_interfaces:
+        config:
+          - name: port1.0.5-1.0.7
+            enabled: False
+        state: replaced
+
+        #- name: x930
+        #  connection: network_cli
+        #  hosts: x930
+        #  collections:
+        #    - alliedtelesis.awplus
+        #  tasks:
+        #    - name: add openflow ports
+        #      awplus_openflow:
+        #        controllers:
+        #          - name: "con1"
+        #            protocol: tcp
+        #            address: 192.168.1.2
+        #            ssl_port: 10
+        #        state: present
+        #
+        #        native_vlan: 4090
+        #
+        #        ports:
+        #          - name: port1.0.23
+        #            openflow: true
+        #
+        #          - name: port1.0.13
+        #            openflow: true
+        #
