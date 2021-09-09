@@ -2,7 +2,16 @@
   hosts: x930-bottom
   collections: alliedtelesis.awplus
   tasks:
-  - null
+  - name: Create vlans
+    awplus_vlans:
+      config:
+      - state: active
+        vlan_id: 200
+      - state: active
+        vlan_id: 456
+      - state: active
+        vlan_id: 4090
+      state: merged
   - name: Add openflow config
     awplus_openflow:
       controllers:
@@ -23,4 +32,9 @@
   hosts: x930-top
   collections: alliedtelesis.awplus
   tasks:
-  - null
+  - name: Create vlans
+    awplus_vlans:
+      config:
+      - state: active
+        vlan_id: 4090
+      state: merged
